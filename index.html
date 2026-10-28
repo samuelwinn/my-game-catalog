@@ -87,7 +87,7 @@ function openInBlank(){
  if(!current)return;
  const game=current;
  const popup=window.open('about:blank','_blank');
- if(!popup){alert('The browser or Google Sites blocked the new tab. Allow pop-ups for this site and try again.');return;}
+ if(!popup){alert('This embedded site could not open a new tab. Please allow pop-ups for your Google Sites page, then try again.');return false;}
  try{
   const doc=popup.document;
   doc.title=game.name+' | LACTOSE';doc.documentElement.lang='en';
@@ -108,20 +108,22 @@ function openInBlank(){
   frame.style.cssText='display:block;width:100%;height:calc(100vh - 56px);border:0;background:#0b1020;';
   full.addEventListener('click',async()=>{
    try{if(doc.fullscreenElement)await doc.exitFullscreen();else await frame.requestFullscreen();}
-   catch{status.textContent='Fullscreen was blocked by your browser.';}
+   catch{status.textContent='Fullscreen permission denied. On Windows, press F11 to expand the browser window.';}
   });
   toolbar.append(title,status,full);doc.body.append(toolbar,frame);
   loadGameDocument(game).then(html=>{
    if(popup.closed)return;
-   frame.srcdoc=html;status.textContent='';
+   frame.srcdoc=html;status.textContent='Click Fullscreen above or press F11 on Windows.';
   }).catch(e=>{
    if(popup.closed)return;
    status.textContent='Game failed to load: '+String(e?.message||e);
   });
  }catch{
   try{popup.close()}catch{}
-  alert('This embedded site is not permitted to control the new tab. Check the browser pop-up settings.');
+  alert('Google Sites or your browser restricted the new tab. Please allow pop-ups, or use another standalone web host.');
+  return false;
  }
+ return true;
 }
 function closeGame(){++requestId;if(document.fullscreenElement===els.viewer)document.exitFullscreen().catch(()=>{});els.viewer.classList.remove('open');els.frame.removeAttribute('srcdoc');els.frame.src='about:blank';document.body.style.overflow='';current=null}
 async function loadCatalog(){try{const response=await fetch(CDN+'games-catalog.json',{cache:'no-store'});if(!response.ok)throw Error('jsDelivr catalog unavailable (HTTP '+response.status+')');
@@ -133,13 +135,29 @@ els.random.addEventListener('click',()=>{const subset=getVisible();if(subset.len
 els.close.addEventListener('click',closeGame);
 els.retry.addEventListener('click',()=>{if(current)openGame(current)});
 els.blank.addEventListener('click',openInBlank);
-els.full.addEventListener('click',async()=>{
+els.full.addEventListener('click',()=>{
+ // Google Sites renders custom embeds inside cross-origin iframes.
+ // An embed cannot grant itself fullscreen permission if its host blocks it.
+ // Open the game in a top-level tab directly from the click in that case.
+ if(window.top!==window || !document.fullscreenEnabled){
+  openInBlank();
+  return;
+ }
+ if(document.fullscreenElement){
+  document.exitFullscreen().catch(()=>{});
+  return;
+ }
  try{
-  if(document.fullscreenElement){await document.exitFullscreen();return;}
-  if(document.fullscreenEnabled&&els.viewer.requestFullscreen){await els.viewer.requestFullscreen();return;}
-  throw new Error('Fullscreen unavailable in embedded page');
+  const attempt=els.viewer.requestFullscreen();
+  if(attempt&&typeof attempt.catch==='function'){
+   attempt.catch(()=>{
+    // A rejected asynchronous request may lose popup user activation.
+    // Ask the user to click the separate new-tab button directly.
+    alert('Fullscreen was denied by the browser. Select "Open in about:blank", then click Fullscreen in the new tab (or press F11 on Windows).');
+   });
+  }
  }catch{
-  alert('Google Sites or your browser is blocking fullscreen in this embed. Use "Open in about:blank", then click Fullscreen in the new tab.');
+  alert('Fullscreen was denied. Select "Open in about:blank" to play in a separate tab.');
  }
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&els.viewer.classList.contains('open')&&!document.fullscreenElement)closeGame()});
