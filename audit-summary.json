@@ -1,0 +1,19 @@
+{
+  "original_catalog_entries": 972,
+  "supplied_html_files": 868,
+  "playable_catalog_entries": 868,
+  "matching_original_names": 291,
+  "new_games_from_zip": 577,
+  "original_catalog_names_without_files": 681,
+  "gzip_compressed_games": 15,
+  "uncompressed_uploaded_bytes": 262133286,
+  "game_files_stored_bytes": 119190362,
+  "largest_stored_game_bytes": 17650439,
+  "games_with_external_http_asset_references": 859,
+  "games_with_relative_asset_references": 306,
+  "notes": [
+    "Static inspection only: game functionality and third-party asset availability are not verified.",
+    "Game files may depend on external servers, browser storage, or missing relative resources.",
+    "Catalog game filenames were matched to old names via normalized punctuation/case only; no guessed matches."
+  ]
+}
