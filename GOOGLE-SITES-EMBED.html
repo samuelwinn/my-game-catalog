@@ -11,7 +11,6 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 20% -20%,#32265044 0,transparent 50%),radial-gradient(ellipse at 95% 25%,#0f72652b 0,transparent 45%),var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}a{color:inherit;text-decoration:none}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
     .shell{max-width:1440px;padding:0 clamp(18px,3.4vw,58px);margin:0 auto}
     header{height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid #ffffff12}
-    .header-right{display:flex;align-items:center;gap:12px}.removal-link{font-size:12px;font-weight:700;line-height:1.3;color:var(--accent2);text-align:right}.removal-link:hover{text-decoration:underline}
     .brand{display:flex;gap:12px;align-items:center;font-weight:850;letter-spacing:.035em;font-size:20px}
     .logo{height:39px;width:39px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,#9d6aff,#40c8b7);box-shadow:0 4px 22px #9b72ff55;color:#0d1428;font-size:23px}
     .navcount{font-size:13px;border:1px solid var(--stroke);padding:8px 12px;border-radius:99px;color:var(--muted)}
@@ -27,7 +26,7 @@
 </head>
 <body>
 <div class="shell">
-<header><div class="brand"><span class="logo" aria-hidden="true">L</span> Liqua <span style="font-size:12px;color:#9daac6;font-weight:600">/ ARCADE</span></div><div class="header-right"><a class="removal-link" href="https://github.com/samuelwinn/my-game-catalog/issues/new?title=Game%20removal%20request" target="_blank" rel="noopener noreferrer" aria-label="Request removal of a game from Liqua">Request game removal</a><div class="navcount" id="headerCount">Loading library…</div></div></header>
+<header><div class="brand"><span class="logo" aria-hidden="true">L</span> Liqua <span style="font-size:12px;color:#9daac6;font-weight:600">/ ARCADE</span></div><div class="navcount" id="headerCount">Loading library…</div></header>
 <section class="hero"><div class="eyebrow">The game library</div><h1>Your next favorite game<br><span class="gradient">starts here.</span></h1><p class="lede">Search the collection, save favorites, and jump straight into a game. No account needed.</p></section>
 <div class="toolbar"><label class="searchwrap" aria-label="Search games"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" placeholder="Search all games…" autocomplete="off"></label><div class="filters"><button class="filter" id="random">↝ Surprise me</button></div></div>
 <div class="sectionbar"><h2 id="sectionTitle">All games</h2><span id="status" class="status" aria-live="polite">Loading…</span></div>
