@@ -65,13 +65,18 @@ async function decompressGzip(buffer){if(!('DecompressionStream' in window))thro
 function setLoading(on,msg='Loading game…',error=''){els.loading.hidden=!on;els.spinner.hidden=!!error;els.loadingText.textContent=msg;els.viewerError.hidden=!error;els.viewerError.textContent=error;els.loadingNote.hidden=!!error}
 
 async function loadGameDocument(game){
- const url=fileUrl(game);
- let response;
- try{response=await fetch(url);if(!response.ok)throw new Error('HTTP '+response.status)}catch(cdnError){
-  const fallback=RAW+filePath(game);
-  try{response=await fetch(fallback,{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status)}
-  catch(rawError){throw new Error('Could not fetch '+game.name+' from jsDelivr or GitHub: '+String(rawError.message||rawError))}
+ // Prefer the latest GitHub source so game repairs take effect without waiting
+ // for jsDelivr's @main cache to expire. Fall back to the CDN when necessary.
+ const sources=[RAW+filePath(game),fileUrl(game)];
+ let response,lastError;
+ for(const url of sources){
+  try{
+   const candidate=await fetch(url,{cache:'no-store'});
+   if(!candidate.ok)throw new Error('HTTP '+candidate.status);
+   response=candidate;break;
+  }catch(e){lastError=e;}
  }
+ if(!response)throw new Error('Could not fetch '+game.name+' from GitHub or jsDelivr: '+String(lastError?.message||lastError));
  const html=game.compressed?await decompressGzip(await response.arrayBuffer()):await response.text();
  return insertBase(html,safeBaseFor(game));
 }
