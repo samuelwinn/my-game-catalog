@@ -1,4 +1,4 @@
-# LACTOSE - jsDelivr-only game delivery (no GitHub Pages required)
+# Liqua - jsDelivr-only game delivery (no GitHub Pages required)
 
 This build uses GitHub as the FILE STORE and **jsDelivr** to deliver your games to the browser, similar to GN-Math's game-loading architecture. It does not require or enable GitHub Pages.
 
