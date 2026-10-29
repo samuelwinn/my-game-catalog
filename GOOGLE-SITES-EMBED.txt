@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b1020" />
-  <meta name="description" content="Browse and play games from the LACTOSE library." />
-  <title>LACTOSE — Game Library</title>
+  <meta name="description" content="Browse and play games from the Liqua library." />
+  <title>Liqua — Game Library</title>
   <style>
     :root{color-scheme:dark;--bg:#0b1020;--panel:#141b2f;--panel2:#1b2540;--stroke:#2c3752;--ink:#f3f5ff;--muted:#a0afca;--accent:#ad89ff;--accent2:#59d8c2;--shadow:0 18px 50px #0006}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 20% -20%,#32265044 0,transparent 50%),radial-gradient(ellipse at 95% 25%,#0f72652b 0,transparent 45%),var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}a{color:inherit;text-decoration:none}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
@@ -26,7 +26,7 @@
 </head>
 <body>
 <div class="shell">
-<header><div class="brand"><span class="logo" aria-hidden="true">L</span> LACTOSE <span style="font-size:12px;color:#9daac6;font-weight:600">/ ARCADE</span></div><div class="navcount" id="headerCount">Loading library…</div></header>
+<header><div class="brand"><span class="logo" aria-hidden="true">L</span> Liqua <span style="font-size:12px;color:#9daac6;font-weight:600">/ ARCADE</span></div><div class="navcount" id="headerCount">Loading library…</div></header>
 <section class="hero"><div class="eyebrow">The game library</div><h1>Your next favorite game<br><span class="gradient">starts here.</span></h1><p class="lede">Search the collection, save favorites, and jump straight into a game. No account needed.</p></section>
 <div class="toolbar"><label class="searchwrap" aria-label="Search games"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="search" type="search" placeholder="Search all games…" autocomplete="off"></label><div class="filters"><button class="filter" id="random">↝ Surprise me</button></div></div>
 <div class="sectionbar"><h2 id="sectionTitle">All games</h2><span id="status" class="status" aria-live="polite">Loading…</span></div>
