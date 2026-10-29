@@ -40,6 +40,7 @@
 // Game metadata and files are stored in a public GitHub repository and delivered by jsDelivr. This page can be embedded on Google Sites.
 const OWNER='samuelwinn', REPO='my-game-catalog', BRANCH='main';
 const CDN=`https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@${BRANCH}/`;
+const RAW=`https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/`;
 const els=Object.fromEntries(['search','status','headerCount','sectionTitle','cards','more','empty','error','viewer','viewerTitle','frame','loading','spinner','loadingText','loadingNote','viewerError','retry','blank','close','random'].map(id=>[id,document.getElementById(id)]));
 let games=[],visible=[],shown=0,current=null,requestId=0;
 const BATCH=72;
@@ -57,7 +58,8 @@ function createCard(game){
 function getVisible(){const q=els.search.value.toLowerCase().trim();return q?games.filter(g=>g.name.toLowerCase().includes(q)):games}
 function showMore(){const end=Math.min(visible.length,shown+BATCH);const frag=document.createDocumentFragment();for(let i=shown;i<end;i++)frag.appendChild(createCard(visible[i]));els.cards.appendChild(frag);shown=end;els.more.hidden=shown>=visible.length}
 function render(){visible=getVisible();els.cards.replaceChildren();shown=0;els.empty.hidden=visible.length>0;els.status.textContent=`${visible.length.toLocaleString()} game${visible.length===1?'':'s'}`;els.sectionTitle.textContent='All games';showMore()}
-function fileUrl(game){if(!game.html||!/^games\/[\w\W]+$/.test(game.html)||game.html.includes('..'))throw new Error('Invalid game path');return CDN+game.html.split('/').map(encodeURIComponent).join('/')}
+function filePath(game){if(!game.html||!/^games\/[\w\W]+$/.test(game.html)||game.html.includes('..'))throw new Error('Invalid game path');return game.html.split('/').map(encodeURIComponent).join('/')}
+function fileUrl(game){return CDN+filePath(game)}
 function safeBaseFor(game){return new URL('.',fileUrl(game)).href}
 function insertBase(html,base){if(/<base(?:\s|>)/i.test(html))return html;const tag=`<base href="${base.replaceAll('&','&amp;').replaceAll('"','&quot;')}">`;return /<head\b[^>]*>/i.test(html)?html.replace(/<head\b[^>]*>/i,s=>s+tag):tag+html}
 async function decompressGzip(buffer){if(!('DecompressionStream' in window))throw new Error('This browser cannot decompress the larger games. Use a current version of Chrome, Edge, Firefox, or Safari.');const stream=new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'));return await new Response(stream).text()}
@@ -65,8 +67,12 @@ function setLoading(on,msg='Loading game…',error=''){els.loading.hidden=!on;el
 
 async function loadGameDocument(game){
  const url=fileUrl(game);
- const response=await fetch(url);
- if(!response.ok)throw new Error('CDN returned HTTP '+response.status+' for '+url);
+ let response;
+ try{response=await fetch(url);if(!response.ok)throw new Error('HTTP '+response.status)}catch(cdnError){
+  const fallback=RAW+filePath(game);
+  try{response=await fetch(fallback,{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status)}
+  catch(rawError){throw new Error('Could not fetch '+game.name+' from jsDelivr or GitHub: '+String(rawError.message||rawError))}
+ }
  const html=game.compressed?await decompressGzip(await response.arrayBuffer()):await response.text();
  return insertBase(html,safeBaseFor(game));
 }
@@ -123,8 +129,11 @@ function openInBlank(){
  return true;
 }
 function closeGame(){++requestId;els.viewer.classList.remove('open');els.frame.removeAttribute('srcdoc');els.frame.src='about:blank';document.body.style.overflow='';current=null}
-async function loadCatalog(){try{const response=await fetch(CDN+'games-catalog.json',{cache:'no-store'});if(!response.ok)throw Error('jsDelivr catalog unavailable (HTTP '+response.status+')');
- const data=await response.json();if(!Array.isArray(data))throw Error('Catalog is not an array');games=data.filter(x=>x&&typeof x.name==='string'&&typeof x.html==='string').sort((a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true,sensitivity:'base'}));if(!games.length)throw Error('The catalog is empty');els.headerCount.textContent=games.length.toLocaleString()+' games';render()}catch(e){els.error.hidden=false;els.error.textContent='Could not load the game catalog. '+e.message+'\n\nPublish all project files to the main branch of the public GitHub repository. The catalog and games are fetched through jsDelivr; no GitHub Pages deployment is required.';els.status.textContent='Catalog unavailable';els.headerCount.textContent='Unavailable'}}
+async function loadCatalog(){try{
+ let data;
+ try{const primary=await fetch(RAW+'games-catalog.json',{cache:'no-store'});if(!primary.ok)throw Error('GitHub returned HTTP '+primary.status);data=await primary.json()}
+ catch(primaryError){const backup=await fetch(CDN+'games-catalog.json',{cache:'no-store'});if(!backup.ok)throw Error('Catalog unavailable from GitHub and jsDelivr (HTTP '+backup.status+')');data=await backup.json()}
+if(!Array.isArray(data))throw Error('Catalog is not an array');games=data.filter(x=>x&&typeof x.name==='string'&&typeof x.html==='string').sort((a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true,sensitivity:'base'}));if(!games.length)throw Error('The catalog is empty');els.headerCount.textContent=games.length.toLocaleString()+' games';render()}catch(e){els.error.hidden=false;els.error.textContent='Could not load the game catalog. '+e.message+'\n\nPublish all project files to the main branch of the public GitHub repository. The catalog is fetched from GitHub, with jsDelivr as a fallback. Game files use jsDelivr first and fall back to GitHub. No GitHub Pages deployment is required.';els.status.textContent='Catalog unavailable';els.headerCount.textContent='Unavailable'}}
 
 els.search.addEventListener('input',render);
 els.more.addEventListener('click',showMore);
