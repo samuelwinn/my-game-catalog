@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minesweeper Mania · Liqua Edition</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font:16px/1.45 system-ui,Arial,sans-serif;background:#0c1425;color:#f1f6ff}body{display:flex;justify-content:center;padding:24px 12px}main{width:min(760px,100%);text-align:center}h1{margin:0 0 3px;font-size:clamp(26px,5vw,38px)}.sub{color:#99abc8;font-size:13px;margin:0 0 18px}.panel{border:1px solid #293950;border-radius:18px;padding:17px;background:#152138}button{font:inherit;cursor:pointer;color:inherit;border:1px solid #526383;border-radius:10px;background:#283e60;padding:9px 14px}button:hover:not(:disabled){background:#34527c}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:15px 0}#status{min-height:24px;color:#c3d3ed;font-weight:650} .foot{font-size:12px;color:#91a6c6;margin:20px 0}
+
+#board{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:3px;max-width:460px;margin:15px auto}
+.cell{aspect-ratio:1;min-width:0;padding:0;border-radius:5px;background:#364b6a;border:1px solid #4c6080;font-weight:850;font-size:clamp(13px,3vw,20px)}
+.cell.open{background:#101b2c;border-color:#30415b}
+.cell.flag{color:#ffc269}.cell.mine{color:#ff9ca7}
+
+</style></head><body><main><h1>Minesweeper Mania</h1><p class="sub">Independently programmed Liqua Edition · No external game assets</p>
+<div class="panel"><div><strong>Mines left: <span id="mines">10</span></strong> · <strong id="modeLabel">Reveal mode</strong></div>
+<div class="actions"><button id="flag" type="button" aria-pressed="false">Toggle flag mode</button><button id="restart" type="button">New board</button></div>
+<div id="board" aria-label="9 by 9 Minesweeper grid"></div><p id="status">Reveal squares without hitting a mine. Right-click to flag.</p></div><p class="foot">This is an unofficial original adaptation, not the GN-Math game's source code.</p></main>
+<script>"use strict";
+const N=9,MINES=10,grid=document.getElementById("board"),status=document.getElementById("status");
+let cells,started,done,flagMode,opened;
+const near=(idx)=>{const r=Math.floor(idx/N),c=idx%N,a=[];for(let dr=-1;dr<=1;dr++)for(let dc=-1;dc<=1;dc++){const y=r+dr,x=c+dc;if((dr||dc)&&y>=0&&y<N&&x>=0&&x<N)a.push(y*N+x)}return a};
+function seed(first){const exclusion=new Set([first,...near(first)]);let pool=Array.from({length:N*N},(_,i)=>i).filter(i=>!exclusion.has(i));for(let k=0;k<MINES;k++){const p=Math.floor(Math.random()*pool.length),i=pool.splice(p,1)[0];cells[i].mine=true}cells.forEach((c,i)=>c.count=near(i).filter(j=>cells[j].mine).length);started=true}
+function flag(i){if(done||cells[i].open)return;cells[i].flag=!cells[i].flag;render()}
+function reveal(i){
+ if(done||cells[i].flag||cells[i].open)return;
+ if(!started)seed(i);
+ if(cells[i].mine){done=true;cells[i].open=true;status.textContent="Mine found! Try a new board.";render();return}
+ const queue=[i];
+ while(queue.length){const k=queue.pop(),c=cells[k];if(c.open||c.flag||c.mine)continue;c.open=true;opened++;if(c.count===0)queue.push(...near(k))}
+ if(opened===N*N-MINES){done=true;status.textContent="You cleared the whole field!";}
+ render();
+}
+function render(){
+ grid.replaceChildren();let flags=0;
+ cells.forEach((c,i)=>{if(c.flag)flags++;
+ const el=document.createElement("button");el.type="button";el.className="cell"+(c.open?" open":"")+(c.flag?" flag":"")+(c.mine&&c.open?" mine":"");
+ el.textContent=c.flag?"⚑":c.open?(c.mine?"✹":c.count||""):"";
+ if(c.open&&c.count&&!c.mine)el.style.color=["","#8cc9ff","#8ce6b4","#ffa0a0","#c4a4ff","#ffc782","#f7a7df","#e5d7a0","#fff"][c.count];
+ el.setAttribute("aria-label","Row "+(Math.floor(i/N)+1)+", column "+(i%N+1)+(c.flag?", flagged":""));
+ el.addEventListener("click",()=>flagMode?flag(i):reveal(i));
+ el.addEventListener("contextmenu",e=>{e.preventDefault();flag(i)});
+ grid.append(el);
+ });
+ document.getElementById("mines").textContent=MINES-flags;
+ document.getElementById("modeLabel").textContent=flagMode?"Flag mode":"Reveal mode";
+ document.getElementById("flag").setAttribute("aria-pressed",String(flagMode));
+}
+function reset(){cells=Array.from({length:N*N},()=>({mine:false,count:0,open:false,flag:false}));started=false;done=false;flagMode=false;opened=0;status.textContent="Click any square to start. Right-click or switch modes to flag.";render()}
+document.getElementById("flag").onclick=()=>{flagMode=!flagMode;render()};
+document.getElementById("restart").onclick=reset;reset();
+</script></body></html>

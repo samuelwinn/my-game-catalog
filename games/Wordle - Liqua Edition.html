@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wordle · Liqua Edition</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font:16px/1.45 system-ui,Arial,sans-serif;background:#0c1425;color:#f1f6ff}body{display:flex;justify-content:center;padding:24px 12px}main{width:min(760px,100%);text-align:center}h1{margin:0 0 3px;font-size:clamp(26px,5vw,38px)}.sub{color:#99abc8;font-size:13px;margin:0 0 18px}.panel{border:1px solid #293950;border-radius:18px;padding:17px;background:#152138}button{font:inherit;cursor:pointer;color:inherit;border:1px solid #526383;border-radius:10px;background:#283e60;padding:9px 14px}button:hover:not(:disabled){background:#34527c}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:15px 0}#status{min-height:24px;color:#c3d3ed;font-weight:650} .foot{font-size:12px;color:#91a6c6;margin:20px 0}
+
+#tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;width:min(330px,94vw);margin:20px auto}
+.tile{aspect-ratio:1;border:2px solid #4b5e78;border-radius:7px;display:grid;place-items:center;font-size:clamp(20px,5vw,30px);font-weight:850;background:#18263c}
+.tile.exact{background:#397d5c;border-color:#397d5c}.tile.near{background:#a3833b;border-color:#a3833b}.tile.miss{background:#3d4b60;border-color:#3d4b60}
+#guess{letter-spacing:.25em;text-transform:uppercase;text-align:center;font-weight:800;font-size:22px;border-radius:10px;background:#0d192c;color:white;border:1px solid #5c7090;padding:12px;width:min(290px,90%)}
+
+</style></head><body><main><h1>Wordle</h1><p class="sub">Independently programmed Liqua Edition · No external game assets</p>
+<div class="panel"><div id="tiles" aria-label="Word guessing board"></div>
+<form id="entry" class="actions"><input aria-label="Five-letter guess" id="guess" maxlength="5" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="5 LETTERS" required><button type="submit">Guess</button></form>
+<p id="status">Guess a five-letter word in six tries.</p><button id="restart" type="button">New word</button></div><p class="foot">This is an unofficial original adaptation, not the GN-Math game's source code.</p></main>
+<script>"use strict";
+const WORDS=["APPLE","BRAVE","CLOUD","DREAM","EARTH","FLAME","GRAPE","HOUSE","IVORY","JELLY","KNIFE","LEMON","MANGO","NORTH","OCEAN","PAINT","QUILT","RIVER","SMILE","TIGER","UNITY","VIVID","WATER","YOUNG","ZEBRA","BEACH","BLOOM","CANDY","DANCE","ELBOW","FAITH","GHOST","HEART","JUICE","LIGHT","MUSIC","NIGHT","OLIVE","PEACH","QUEEN","ROBOT","SNAKE","TRAIN","VOICE","WHEAT","WORLD","STONE","SHEEP","PIZZA","PLANT","SWEET","FRESH","BRAIN","TABLE","SOUND","STORM","SUGAR","BRICK","CRAFT","BERRY"];
+let answer,attempts,finished;
+const tiles=document.getElementById("tiles"),input=document.getElementById("guess"),status=document.getElementById("status");
+function grade(guess){const marks=Array(5).fill("miss"),left={};for(let i=0;i<5;i++){if(guess[i]===answer[i])marks[i]="exact";else left[answer[i]]=(left[answer[i]]||0)+1}
+ for(let i=0;i<5;i++)if(marks[i]!=="exact"&&left[guess[i]]>0){marks[i]="near";left[guess[i]]--}return marks}
+function paint(){tiles.replaceChildren();for(let r=0;r<6;r++)for(let c=0;c<5;c++){
+ const cell=document.createElement("div");cell.className="tile"+(attempts[r]?" "+attempts[r].marks[c]:"");cell.textContent=attempts[r]?.word[c]||"";tiles.append(cell)}}
+function reset(){answer=WORDS[Math.floor(Math.random()*WORDS.length)];attempts=[];finished=false;input.disabled=false;input.value="";status.textContent="Green: correct position. Gold: present elsewhere.";paint();input.focus()}
+document.getElementById("entry").addEventListener("submit",e=>{e.preventDefault();if(finished)return;const word=input.value.trim().toUpperCase();if(!/^[A-Z]{5}$/.test(word)){status.textContent="Enter exactly five letters.";return}
+ attempts.push({word,marks:grade(word)});input.value="";paint();
+ if(word===answer){status.textContent="Solved in "+attempts.length+" guess(es)!";finished=true}
+ else if(attempts.length===6){status.textContent="The word was "+answer+". Try another!";finished=true}
+ else status.textContent=(6-attempts.length)+" guess(es) remaining.";
+ if(finished)input.disabled=true;else input.focus()});
+document.getElementById("restart").onclick=reset;reset();
+</script></body></html>

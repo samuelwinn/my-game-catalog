@@ -1,15 +1,31 @@
 [
   {
-    "name": "007 Nightfire",
-    "html": "games/007 Nightfire.html"
-  },
-  {
     "name": "1",
     "html": "games/1.html"
   },
   {
     "name": "1 On 1 Tennis",
     "html": "games/1 On 1 Tennis.html"
+  },
+  {
+    "name": "2Doom",
+    "html": "games/2Doom.html"
+  },
+  {
+    "name": "3Dash",
+    "html": "games/3Dash.html"
+  },
+  {
+    "name": "4th And Goal",
+    "html": "games/4th And Goal.html"
+  },
+  {
+    "name": "7 Grand Dad",
+    "html": "games/7 Grand Dad.html"
+  },
+  {
+    "name": "007 Nightfire",
+    "html": "games/007 Nightfire.html"
   },
   {
     "name": "10 Bullets",
@@ -24,6 +40,18 @@
     "html": "games/12 Mini Battles.html"
   },
   {
+    "name": "40xescape",
+    "html": "games/40xescape.html"
+  },
+  {
+    "name": "60 Seconds Santa Run",
+    "html": "games/60 Seconds Santa Run.html"
+  },
+  {
+    "name": "99 Nights In The Forest",
+    "html": "games/99 Nights In The Forest.html"
+  },
+  {
     "name": "2048",
     "html": "games/2048.html"
   },
@@ -32,36 +60,8 @@
     "html": "games/2048 Cupcakes.html"
   },
   {
-    "name": "2Doom",
-    "html": "games/2Doom.html"
-  },
-  {
-    "name": "3Dash",
-    "html": "games/3Dash.html"
-  },
-  {
-    "name": "40xescape",
-    "html": "games/40xescape.html"
-  },
-  {
-    "name": "4th And Goal",
-    "html": "games/4th And Goal.html"
-  },
-  {
-    "name": "60 Seconds Santa Run",
-    "html": "games/60 Seconds Santa Run.html"
-  },
-  {
-    "name": "7 Grand Dad",
-    "html": "games/7 Grand Dad.html"
-  },
-  {
     "name": "9007199254740992",
     "html": "games/9007199254740992.html"
-  },
-  {
-    "name": "99 Nights In The Forest",
-    "html": "games/99 Nights In The Forest.html"
   },
   {
     "name": "A Dark Room",
@@ -204,12 +204,12 @@
     "html": "games/Bad Time Simulator.html"
   },
   {
-    "name": "Baldi's Basics The Ultra Decompile",
-    "html": "games/Baldis Basics The Ultra Decompile.html"
-  },
-  {
     "name": "Baldi’s Basics",
     "html": "games/Baldis Basics.html"
+  },
+  {
+    "name": "Baldi's Basics The Ultra Decompile",
+    "html": "games/Baldis Basics The Ultra Decompile.html"
   },
   {
     "name": "Baldi’s Fun New School Ultimate",
@@ -308,6 +308,10 @@
     "html": "games/Blightborne.html"
   },
   {
+    "name": "Block Blast (Liqua Edition)",
+    "html": "games/Block Blast - Liqua Edition.html"
+  },
+  {
     "name": "Block the Pig",
     "html": "games/Block the Pig.html"
   },
@@ -342,6 +346,10 @@
   {
     "name": "Bounty of One",
     "html": "games/Bounty of One.html"
+  },
+  {
+    "name": "Breaklock",
+    "html": "games/Breaklock.html"
   },
   {
     "name": "Bridge Race",
@@ -481,6 +489,10 @@
     "html": "games/Colin Mcrae Rally.html"
   },
   {
+    "name": "Color Water Sort 3D (Liqua Edition)",
+    "html": "games/Color Water Sort 3D - Liqua Edition.html"
+  },
+  {
     "name": "Commander Keen 4",
     "html": "games/Commander Keen 4.html"
   },
@@ -499,6 +511,10 @@
   {
     "name": "Contra",
     "html": "games/Contra.html"
+  },
+  {
+    "name": "Cookie Clicker (Liqua Edition)",
+    "html": "games/Cookie Clicker - Liqua Edition.html"
   },
   {
     "name": "Cooking Mama",
@@ -805,12 +821,12 @@
     "html": "games/FIFA 11.html"
   },
   {
-    "name": "FIFA 2000",
-    "html": "games/FIFA 2000.html"
-  },
-  {
     "name": "FIFA 99",
     "html": "games/FIFA 99.html"
+  },
+  {
+    "name": "FIFA 2000",
+    "html": "games/FIFA 2000.html"
   },
   {
     "name": "FIFA International Soccer",
@@ -931,6 +947,10 @@
   {
     "name": "Five Nights At Shrek’s Hotel",
     "html": "games/Five Nights at Shreks Hotel.html"
+  },
+  {
+    "name": "Flappy Bird (Liqua Edition)",
+    "html": "games/Flappy Bird - Liqua Edition.html"
   },
   {
     "name": "Folder Dungeon",
@@ -1613,18 +1633,6 @@
     "html": "games/Madden NFL.html"
   },
   {
-    "name": "Madden NFL 2000",
-    "html": "games/Madden NFL 2000.html"
-  },
-  {
-    "name": "Madden NFL 2001",
-    "html": "games/Madden NFL 2001.html"
-  },
-  {
-    "name": "Madden NFL 2002",
-    "html": "games/Madden NFL 2002.html"
-  },
-  {
     "name": "Madden NFL 94",
     "html": "games/Madden NFL 94.html"
   },
@@ -1643,6 +1651,18 @@
   {
     "name": "Madden NFL 99",
     "html": "games/Madden NFL 99.html"
+  },
+  {
+    "name": "Madden NFL 2000",
+    "html": "games/Madden NFL 2000.html"
+  },
+  {
+    "name": "Madden NFL 2001",
+    "html": "games/Madden NFL 2001.html"
+  },
+  {
+    "name": "Madden NFL 2002",
+    "html": "games/Madden NFL 2002.html"
   },
   {
     "name": "Madness Combat FPS Fueled by Hot Dogs",
@@ -1845,16 +1865,6 @@
     "html": "games/Mine Shooter.html"
   },
   {
-    "name": "Minecraft 1.11.2",
-    "html": "games/Minecraft 1.11.2.html.gz",
-    "compressed": true
-  },
-  {
-    "name": "Minecraft 1.12.2",
-    "html": "games/Minecraft 1.12.2.html.gz",
-    "compressed": true
-  },
-  {
     "name": "Minecraft 1.5.2",
     "html": "games/Minecraft 1.5.2.html.gz",
     "compressed": true
@@ -1884,6 +1894,16 @@
     "compressed": true
   },
   {
+    "name": "Minecraft 1.11.2",
+    "html": "games/Minecraft 1.11.2.html.gz",
+    "compressed": true
+  },
+  {
+    "name": "Minecraft 1.12.2",
+    "html": "games/Minecraft 1.12.2.html.gz",
+    "compressed": true
+  },
+  {
     "name": "Minecraft Alpha 1.2.6",
     "html": "games/Minecraft Alpha 1.2.6.html.gz",
     "compressed": true
@@ -1902,6 +1922,10 @@
     "name": "Minecraft Indev",
     "html": "games/Minecraft Indev.html.gz",
     "compressed": true
+  },
+  {
+    "name": "Minesweeper Mania (Liqua Edition)",
+    "html": "games/Minesweeper Mania - Liqua Edition.html"
   },
   {
     "name": "Minesweeper Plus",
@@ -2196,6 +2220,10 @@
     "html": "games/Pogo 3D.html"
   },
   {
+    "name": "Pokéclassic",
+    "html": "games/Pokéclassic.html"
+  },
+  {
     "name": "Pokemon - Diamond Version",
     "html": "games/Pokemon - Diamond Version.html"
   },
@@ -2280,6 +2308,10 @@
     "html": "games/Pokemon Emerald Enhanced.html"
   },
   {
+    "name": "Pokémon Emerald Horizons",
+    "html": "games/Pokémon Emerald Horizons.html"
+  },
+  {
     "name": "Pokemon Emerald Imperium",
     "html": "games/Pokemon Emerald Imperium.html"
   },
@@ -2310,6 +2342,14 @@
   {
     "name": "Pokemon Evolved",
     "html": "games/Pokemon Evolved.html"
+  },
+  {
+    "name": "Pokémon Exceeded Emerald",
+    "html": "games/Pokémon Exceeded Emerald.html"
+  },
+  {
+    "name": "Pokémon Fire Gold",
+    "html": "games/Pokémon Fire Gold.html"
   },
   {
     "name": "Pokemon Firered",
@@ -2376,12 +2416,24 @@
     "html": "games/Pokemon Pisces.html"
   },
   {
+    "name": "Pokémon Pit of 100 trials (generation 9)",
+    "html": "games/Pokémon Pit of 100 trials (generation 9).html"
+  },
+  {
+    "name": "Pokémon Polished Crystal",
+    "html": "games/Pokémon Polished Crystal.html"
+  },
+  {
     "name": "Pokemon Quetzal",
     "html": "games/Pokemon Quetzal.html"
   },
   {
     "name": "Pokemon Radical Red",
     "html": "games/Pokemon Radical Red.html"
+  },
+  {
+    "name": "Pokémon Recharged Pink",
+    "html": "games/Pokémon Recharged Pink.html"
   },
   {
     "name": "Pokemon Red Version",
@@ -2432,12 +2484,20 @@
     "html": "games/Pokemon Sword and Shield Ultimate Plus.html"
   },
   {
+    "name": "Pokémon Team Rocket Edition",
+    "html": "games/Pokémon Team Rocket Edition.html"
+  },
+  {
     "name": "Pokemon the Last Fire Red",
     "html": "games/Pokemon the Last Fire Red.html"
   },
   {
     "name": "Pokemon Too Many Types",
     "html": "games/Pokemon Too Many Types.html"
+  },
+  {
+    "name": "Pokémon Tourmaline Version",
+    "html": "games/Pokémon Tourmaline Version.html"
   },
   {
     "name": "Pokemon Tower Defense",
@@ -2450,6 +2510,10 @@
   {
     "name": "Pokemon Unbound",
     "html": "games/Pokemon Unbound.html"
+  },
+  {
+    "name": "Pokémon Unova Emerald",
+    "html": "games/Pokémon Unova Emerald.html"
   },
   {
     "name": "Pokemon Vega",
@@ -2474,46 +2538,6 @@
   {
     "name": "Pokemon Yellow Version",
     "html": "games/Pokemon Yellow Version.html"
-  },
-  {
-    "name": "Pokéclassic",
-    "html": "games/Pokéclassic.html"
-  },
-  {
-    "name": "Pokémon Emerald Horizons",
-    "html": "games/Pokémon Emerald Horizons.html"
-  },
-  {
-    "name": "Pokémon Exceeded Emerald",
-    "html": "games/Pokémon Exceeded Emerald.html"
-  },
-  {
-    "name": "Pokémon Fire Gold",
-    "html": "games/Pokémon Fire Gold.html"
-  },
-  {
-    "name": "Pokémon Pit of 100 trials (generation 9)",
-    "html": "games/Pokémon Pit of 100 trials (generation 9).html"
-  },
-  {
-    "name": "Pokémon Polished Crystal",
-    "html": "games/Pokémon Polished Crystal.html"
-  },
-  {
-    "name": "Pokémon Recharged Pink",
-    "html": "games/Pokémon Recharged Pink.html"
-  },
-  {
-    "name": "Pokémon Team Rocket Edition",
-    "html": "games/Pokémon Team Rocket Edition.html"
-  },
-  {
-    "name": "Pokémon Tourmaline Version",
-    "html": "games/Pokémon Tourmaline Version.html"
-  },
-  {
-    "name": "Pokémon Unova Emerald",
-    "html": "games/Pokémon Unova Emerald.html"
   },
   {
     "name": "Police Pursuit 2",
@@ -3443,6 +3467,10 @@
     "html": "games/Wolfenstein 3D.html"
   },
   {
+    "name": "Wordle (Liqua Edition)",
+    "html": "games/Wordle - Liqua Edition.html"
+  },
+  {
     "name": "Wrassling",
     "html": "games/Wrassling.html"
   },
@@ -3485,9 +3513,5 @@
   {
     "name": "Zombotron Reboot",
     "html": "games/Zombotron Reboot.html"
-  },
-  {
-    "name": "Breaklock",
-    "html": "games/Breaklock.html"
   }
 ]

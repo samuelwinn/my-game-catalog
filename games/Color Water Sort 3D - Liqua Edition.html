@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Color Water Sort 3D · Liqua Edition</title>
+<style>:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font:16px/1.45 system-ui,Arial,sans-serif;background:#0c1425;color:#f1f6ff}body{display:flex;justify-content:center;padding:24px 12px}main{width:min(760px,100%);text-align:center}h1{margin:0 0 3px;font-size:clamp(26px,5vw,38px)}.sub{color:#99abc8;font-size:13px;margin:0 0 18px}.panel{border:1px solid #293950;border-radius:18px;padding:17px;background:#152138}button{font:inherit;cursor:pointer;color:inherit;border:1px solid #526383;border-radius:10px;background:#283e60;padding:9px 14px}button:hover:not(:disabled){background:#34527c}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:15px 0}#status{min-height:24px;color:#c3d3ed;font-weight:650}.foot{font-size:12px;color:#91a6c6;margin:20px 0}
+#tubes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 12px;max-width:420px;margin:24px auto}
+.tube{position:relative;display:flex;flex-direction:column-reverse;justify-content:flex-start;height:158px;width:65px;margin:auto;padding:4px;border:4px solid #b2d6f5a8;border-top:0;border-radius:0 0 22px 22px;background:linear-gradient(90deg,#fff2,transparent 50%,#fff1);overflow:hidden}
+.tube:before{content:"";pointer-events:none;position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#ffffff19 0%,transparent 25%,#ffffff0a 65%,#00000021 100%)}
+.tube.selected{border-color:#ffe89b;box-shadow:0 0 18px #ffe89b66}
+.layer{height:25%;flex:0 0 25%;background:var(--water);border-radius:3px}
+#instructions{font-size:14px;color:#a6b9d3}
+
+</style></head><body><main><h1>Color Water Sort 3D</h1><p class="sub">Independently programmed Liqua Edition · No external game assets</p>
+<div class="panel"><strong>Moves: <span id="moves">0</span></strong>
+<div id="tubes" aria-label="Colored water sorting tubes"></div>
+<p id="status">Select a tube, then another tube to pour into.</p>
+<div class="actions"><button type="button" id="undo">Undo</button><button type="button" id="restart">New mix</button></div>
+<p id="instructions">Only pour onto the same color or into an empty tube. Sort each color into one tube.</p></div><p class="foot">This is an unofficial original adaptation, not the GN-Math game's source code.</p></main><script>"use strict";
+const COLOR=["#ff788e","#4ad0dd","#ffcb68","#a493ff"],holder=document.getElementById("tubes"),status=document.getElementById("status");
+const SEED=[[0,1,2,3],[1,2,3,0],[2,3,0,1],[3,0,1,2],[],[]];
+let tubes,selected,history,moves,finished;
+function solved(){return tubes.every(t=>t.length===0||t.length===4&&t.every(c=>c===t[0]))}
+function render(){
+ holder.replaceChildren();
+ tubes.forEach((tube,i)=>{const button=document.createElement("button");button.type="button";button.className="tube"+(selected===i?" selected":"");button.setAttribute("aria-label","Tube "+(i+1)+": "+tube.length+" layers");
+ tube.forEach(color=>{const layer=document.createElement("span");layer.className="layer";layer.style.setProperty("--water",COLOR[color]);button.append(layer)});
+ button.addEventListener("click",()=>choose(i));holder.append(button)});
+ document.getElementById("moves").textContent=moves;
+ document.getElementById("undo").disabled=!history.length;
+}
+function choose(i){
+ if(finished)return;
+ if(selected===null){if(!tubes[i].length){status.textContent="Select a tube containing water.";return}selected=i;status.textContent="Choose another tube to pour into.";render();return}
+ if(selected===i){selected=null;render();return}
+ const from=tubes[selected],to=tubes[i];selected=null;
+ if(!from.length||to.length===4||(to.length&&to[to.length-1]!==from[from.length-1])){
+ status.textContent="That pour isn't allowed.";render();return}
+ history.push(tubes.map(t=>t.slice()));
+ const top=from[from.length-1];let moved=0;
+ while(from.length&&from[from.length-1]===top&&to.length<4){to.push(from.pop());moved++}
+ moves++;status.textContent="Poured "+moved+" layer(s).";
+ if(solved()){finished=true;status.textContent="All sorted in "+moves+" moves!";}
+ render();
+}
+function mix(){const palette=[0,1,2,3];for(let i=palette.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[palette[i],palette[j]]=[palette[j],palette[i]]}
+ tubes=SEED.map(t=>t.map(c=>palette[c]));tubes.sort(()=>Math.random()-.5);
+ selected=null;history=[];moves=0;finished=false;status.textContent="Choose a tube to start sorting.";render()}
+document.getElementById("undo").onclick=()=>{if(!history.length)return;tubes=history.pop();moves--;finished=false;selected=null;status.textContent="Move undone.";render()};
+document.getElementById("restart").onclick=mix;mix();
+</script></body></html>

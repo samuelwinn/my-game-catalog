@@ -4,8 +4,8 @@ This build uses GitHub as the FILE STORE and **jsDelivr** to deliver your games 
 
 ## Files
 
-- `games/` - all 868 provided game files (15 of the largest stored as `.html.gz` to fit jsDelivr's per-file size limit)
-- `games-catalog.json` - 868 entries with file paths; none point to Google Drive
+- `games/` - all 875 game files (869 prior files plus 6 original Liqua Edition additions) (15 of the largest stored as `.html.gz` to fit jsDelivr's per-file size limit)
+- `games-catalog.json` - 875 entries with file paths; none point to Google Drive
 - `index.html` - full website source; fetches the catalog and game files exclusively from jsDelivr
 - `GOOGLE-SITES-EMBED.txt` - source to paste into Google Sites > Insert > Embed > Embed code
 - `GOOGLE-SITES-EMBED.html` - same self-contained site HTML for viewing/editing
@@ -45,3 +45,19 @@ You may also use `index.html` on **another legitimate static website host** inst
 - The public GitHub repository must contain the extracted project files, not the ZIP alone, before jsDelivr can deliver them.
 - jsDelivr documents default package limits (150 MB total, 20 MB/file), and serves HTML as `text/plain`. This package is approximately 114 MiB of extracted game data after its 15 largest files were gzip compressed. CDN caching can delay updates on @main URLs.
 - Publishing third-party games or source files requires proper rights or permission; do not assume this package grants a license.
+
+## Original Liqua Edition additions — October 29, 2026
+
+Six **independently written HTML/CSS/JavaScript games** were added under `games/` and registered in `games-catalog.json`:
+
+- **Block Blast (Liqua Edition)** — `games/Block Blast - Liqua Edition.html`
+- **Minesweeper Mania (Liqua Edition)** — `games/Minesweeper Mania - Liqua Edition.html`
+- **Wordle (Liqua Edition)** — `games/Wordle - Liqua Edition.html`
+- **Color Water Sort 3D (Liqua Edition)** — `games/Color Water Sort 3D - Liqua Edition.html`
+- **Cookie Clicker (Liqua Edition)** — `games/Cookie Clicker - Liqua Edition.html`
+- **Flappy Bird (Liqua Edition)** — `games/Flappy Bird - Liqua Edition.html`
+
+Every edition is a real, self-contained, client-side game with no third-party scripts, CDN assets, or external dependencies. It runs in the existing Liqua viewer and uses the same GitHub repository files. These are **original adaptations of familiar game mechanics, NOT copies or verified ports of GN-Math's original games**. The game titles are labeled `(Liqua Edition)` to make that distinction clear. The earlier `comparison/gn-math-games-missing-from-liqua-2026-10-29.csv` remains a historical name comparison, not a verified list of republishable files.
+
+The submitted GN-Math HTML source loads a remote `zones.json`, and most referenced game HTML files load additional external proprietary files. Those games cannot be truthfully claimed to run natively by copying their small loader HTML. Redistributing proprietary games also requires rights from their owners. The six original Liqua Editions do not require any of that upstream code or assets.
+
