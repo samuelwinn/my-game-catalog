@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Block Blast · Liqua Edition</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font:16px/1.45 system-ui,Arial,sans-serif;background:#0c1425;color:#f1f6ff}body{display:flex;justify-content:center;padding:24px 12px}main{width:min(760px,100%);text-align:center}h1{margin:0 0 3px;font-size:clamp(26px,5vw,38px)}.sub{color:#99abc8;font-size:13px;margin:0 0 18px}.panel{border:1px solid #293950;border-radius:18px;padding:17px;background:#152138}button{font:inherit;cursor:pointer;color:inherit;border:1px solid #526383;border-radius:10px;background:#283e60;padding:9px 14px}button:hover:not(:disabled){background:#34527c}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:15px 0}#status{min-height:24px;color:#c3d3ed;font-weight:650} .foot{font-size:12px;color:#91a6c6;margin:20px 0}
+
+#board{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;width:min(398px,93vw);margin:12px auto;background:#263a62;padding:7px;border-radius:14px}
+.cell{aspect-ratio:1;border:0;border-radius:5px;padding:0;background:#101e36;min-width:0}
+.cell.filled{background:var(--tile);box-shadow:inset 0 -4px #0003}
+.cell.preview{outline:3px solid #aaffcf;outline-offset:-3px}
+#tray{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.piece{min-width:95px;min-height:95px;display:grid;align-items:center;justify-items:center}
+.piece.active{border:2px solid #95eac7;background:#21445a}
+.minigrid{display:grid;gap:3px;align-content:center}
+.minitile{width:16px;height:16px;background:var(--tile);border-radius:3px}
+.emptymini{width:16px;height:16px}
+
+</style></head><body><main><h1>Block Blast</h1><p class="sub">Independently programmed Liqua Edition · No external game assets</p>
+<div class="panel"><strong>Score: <span id="score">0</span></strong><div id="board" aria-label="Block placement board"></div>
+<div id="tray" aria-label="Choose a piece"></div><p id="status">Select a shape, then choose where its top-left block goes.</p>
+<button id="restart" type="button">New game</button></div><p class="foot">This is an unofficial original adaptation, not the GN-Math game's source code.</p></main>
+<script>"use strict";
+const N=8,colors=["#40c9c1","#a989ff","#ffb257","#ff7398","#62a9fa","#96d06c"];
+const SHAPES=[[[0,0]],[[0,0],[1,0]],[[0,0],[0,1]],[[0,0],[0,1],[0,2]],[[0,0],[1,0],[2,0]],[[0,0],[1,0],[0,1],[1,1]],[[0,0],[1,0],[2,0],[1,1]],[[0,0],[0,1],[1,1]],[[0,0],[1,0],[1,1]]];
+let board,hand,selection,points,ended;
+const b=document.getElementById("board"),t=document.getElementById("tray"),msg=document.getElementById("status");
+const rand=n=>Math.floor(Math.random()*n);
+function piece(){return {shape:SHAPES[rand(SHAPES.length)],color:colors[rand(colors.length)]};}
+function fits(p,row,col){
+ return p.shape.every(([r,c])=>row+r<N&&col+c<N&&!board[row+r][col+c]);
+}
+function anyMoves(){return hand.some(p=>p&&Array.from({length:N},(_,r)=>r).some(r=>Array.from({length:N},(_,c)=>c).some(c=>fits(p,r,c))));}
+function render(){
+ b.replaceChildren();
+ for(let r=0;r<N;r++)for(let c=0;c<N;c++){
+  const button=document.createElement("button");button.type="button";button.className="cell"+(board[r][c]?" filled":"");button.style.setProperty("--tile",board[r][c]||"transparent");
+  button.setAttribute("aria-label","Row "+(r+1)+" column "+(c+1));
+  if(selection!==null&&hand[selection]&&hand[selection].shape.some(([dr,dc])=>dr===0&&dc===0)&&!board[r][c]&&fits(hand[selection],r,c))button.classList.add("preview");
+  button.addEventListener("click",()=>place(r,c));b.append(button);
+ }
+ t.replaceChildren();
+ hand.forEach((p,i)=>{
+  const btn=document.createElement("button");btn.type="button";btn.className="piece"+(selection===i?" active":"");btn.disabled=!p||ended;btn.setAttribute("aria-label","Piece "+(i+1));
+  if(p){const width=Math.max(...p.shape.map(x=>x[1]))+1, height=Math.max(...p.shape.map(x=>x[0]))+1;
+   const grid=document.createElement("div");grid.className="minigrid";grid.style.gridTemplateColumns="repeat("+width+",16px)";
+   for(let r=0;r<height;r++)for(let c=0;c<width;c++){const tile=document.createElement("span");tile.className=p.shape.some(([y,x])=>y===r&&x===c)?"minitile":"emptymini";tile.style.setProperty("--tile",p.color);grid.append(tile)}
+   btn.append(grid);
+  }else btn.textContent="✓";
+  btn.addEventListener("click",()=>{selection=i;render()});t.append(btn);
+ });
+ document.getElementById("score").textContent=points;
+}
+function place(r,c){
+ if(ended)return;
+ if(selection===null){msg.textContent="Choose one of the shapes below first.";return}
+ const p=hand[selection];if(!p||!fits(p,r,c)){msg.textContent="That shape won't fit there.";return}
+ p.shape.forEach(([dr,dc])=>board[r+dr][c+dc]=p.color);points+=p.shape.length;
+ hand[selection]=null;selection=null;
+ const rows=Array.from({length:N},(_,r)=>r).filter(r=>board[r].every(Boolean));
+ const cols=Array.from({length:N},(_,c)=>c).filter(c=>board.every(row=>row[c]));
+ rows.forEach(r=>board[r].fill(null));cols.forEach(c=>board.forEach(row=>row[c]=null));
+ const cleared=rows.length+cols.length;points+=cleared*10;
+ if(hand.every(x=>x===null))hand=[piece(),piece(),piece()];
+ if(!anyMoves()){ended=true;msg.textContent="No room left. Final score: "+points;}
+ else msg.textContent=cleared?"Cleared "+cleared+" line(s)!":"Place another shape.";
+ render();
+}
+function reset(){board=Array.from({length:N},()=>Array(N).fill(null));hand=[piece(),piece(),piece()];selection=null;points=0;ended=false;msg.textContent="Select a shape, then click its top-left position.";render()}
+document.getElementById("restart").addEventListener("click",reset);reset();
+</script></body></html>

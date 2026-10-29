@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "repository": "samuelwinn/my-game-catalog",
+  "existingCatalogEntries": 869,
+  "addedLocalGames": 6,
+  "newCatalogEntries": 875,
+  "source": "GN-Math zone names associated with the user-provided HTML catalog loader",
+  "interpretation": "Independent original Liqua Editions; not the GN-Math game binaries/code",
+  "additions": [
+    {
+      "sourceTitle": "Block Blast",
+      "sourceId": 6,
+      "localName": "Block Blast (Liqua Edition)",
+      "path": "games/Block Blast - Liqua Edition.html",
+      "native": true,
+      "thirdPartyAssets": false
+    },
+    {
+      "sourceTitle": "Minesweeper Mania",
+      "sourceId": 313,
+      "localName": "Minesweeper Mania (Liqua Edition)",
+      "path": "games/Minesweeper Mania - Liqua Edition.html",
+      "native": true,
+      "thirdPartyAssets": false
+    },
+    {
+      "sourceTitle": "Wordle",
+      "sourceId": 112,
+      "localName": "Wordle (Liqua Edition)",
+      "path": "games/Wordle - Liqua Edition.html",
+      "native": true,
+      "thirdPartyAssets": false
+    },
+    {
+      "sourceTitle": "Color Water Sort 3D",
+      "sourceId": 15,
+      "localName": "Color Water Sort 3D (Liqua Edition)",
+      "path": "games/Color Water Sort 3D - Liqua Edition.html",
+      "native": true,
+      "thirdPartyAssets": false
+    },
+    {
+      "sourceTitle": "Cookie Clicker",
+      "sourceId": 82,
+      "localName": "Cookie Clicker (Liqua Edition)",
+      "path": "games/Cookie Clicker - Liqua Edition.html",
+      "native": true,
+      "thirdPartyAssets": false
+    },
+    {
+      "sourceTitle": "Flappy Bird",
+      "sourceId": 129,
+      "localName": "Flappy Bird (Liqua Edition)",
+      "path": "games/Flappy Bird - Liqua Edition.html",
+      "native": true,
+      "thirdPartyAssets": false
+    }
+  ],
+  "upstreamOriginalFilesCopied": 0,
+  "limitations": [
+    "Most GN-Math games are third-party, and their catalog entries are not standalone playable source code.",
+    "Other missing GN-Math titles were not imported or added as remote links.",
+    "Static checks performed; manual game-browser testing remains advisable."
+  ]
+}

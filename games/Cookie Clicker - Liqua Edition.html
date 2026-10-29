@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cookie Clicker · Liqua Edition</title>
+<style>:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font:16px/1.45 system-ui,Arial,sans-serif;background:#0c1425;color:#f1f6ff}body{display:flex;justify-content:center;padding:24px 12px}main{width:min(760px,100%);text-align:center}h1{margin:0 0 3px;font-size:clamp(26px,5vw,38px)}.sub{color:#99abc8;font-size:13px;margin:0 0 18px}.panel{border:1px solid #293950;border-radius:18px;padding:17px;background:#152138}button{font:inherit;cursor:pointer;color:inherit;border:1px solid #526383;border-radius:10px;background:#283e60;padding:9px 14px}button:hover:not(:disabled){background:#34527c}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:15px 0}#status{min-height:24px;color:#c3d3ed;font-weight:650}.foot{font-size:12px;color:#91a6c6;margin:20px 0}
+#cookie{width:min(230px,65vw);aspect-ratio:1;border:7px solid #ce8d48;border-radius:50%;background:radial-gradient(circle at 32% 26%,#ffe8a7,#d98c3b 85%);box-shadow:inset -14px -18px #9e662f77,0 15px 35px #0006;font-size:68px;position:relative;touch-action:manipulation;user-select:none;transition:transform .09s}
+#cookie:active{transform:scale(.94)}
+#cookie:after{content:"";position:absolute;inset:12%;border-radius:50%;background:radial-gradient(circle at 20% 25%,#7d4b2c 0 8px,transparent 9px),radial-gradient(circle at 67% 20%,#7d4b2c 0 9px,transparent 10px),radial-gradient(circle at 72% 67%,#7d4b2c 0 9px,transparent 10px),radial-gradient(circle at 28% 74%,#7d4b2c 0 10px,transparent 11px),radial-gradient(circle at 48% 51%,#7d4b2c 0 7px,transparent 8px)}
+.stat{font-size:32px;font-weight:900;color:#ffdc9a}#shop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:530px;margin:18px auto}#shop button{min-height:98px}
+small{display:block;color:#c5d3eb}
+
+</style></head><body><main><h1>Cookie Clicker</h1><p class="sub">Independently programmed Liqua Edition · No external game assets</p>
+<div class="panel"><div class="stat" id="score">0</div><p>cookies baked · <span id="speed">0</span> / sec</p>
+<button type="button" id="cookie" aria-label="Bake cookie"></button>
+<div id="shop"><button id="cursor"></button><button id="oven"></button></div>
+<p id="status">Tap the cookie to bake more and buy upgrades.</p><button id="restart" type="button">Start over</button></div><p class="foot">This is an unofficial original adaptation, not the GN-Math game's source code.</p></main><script>"use strict";
+let cookies=0,perClick=1,perSec=0,cursors=0,ovens=0;
+const money=Math.floor,status=document.getElementById("status");
+const cursorCost=()=>Math.round(15*Math.pow(1.5,cursors)),ovenCost=()=>Math.round(50*Math.pow(1.65,ovens));
+function render(){
+ document.getElementById("score").textContent=money(cookies).toLocaleString();
+ document.getElementById("speed").textContent=perSec;
+ const a=document.getElementById("cursor"),b=document.getElementById("oven");
+ a.innerHTML="Better tap · "+cursorCost()+"<small>+"+1+" per click · owned "+cursors+"</small>";
+ b.innerHTML="Mini oven · "+ovenCost()+"<small>+"+1+" cookie/sec · owned "+ovens+"</small>";
+ a.disabled=cookies<cursorCost();b.disabled=cookies<ovenCost();
+}
+document.getElementById("cookie").onclick=()=>{cookies+=perClick;render()};
+document.getElementById("cursor").onclick=()=>{const cost=cursorCost();if(cookies<cost)return;cookies-=cost;cursors++;perClick++;status.textContent="Your taps now bake "+perClick+" cookies.";render()};
+document.getElementById("oven").onclick=()=>{const cost=ovenCost();if(cookies<cost)return;cookies-=cost;ovens++;perSec++;status.textContent="An oven is now baking automatically.";render()};
+document.getElementById("restart").onclick=()=>{cookies=0;perClick=1;perSec=0;cursors=0;ovens=0;status.textContent="Fresh batch!";render()};
+setInterval(()=>{if(perSec){cookies+=perSec/10;render()}},100);render();
+</script></body></html>

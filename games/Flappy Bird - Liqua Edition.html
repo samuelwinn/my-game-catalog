@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flappy Bird · Liqua Edition</title>
+<style>:root{color-scheme:dark}*{box-sizing:border-box}html,body{margin:0;min-height:100%;font:16px/1.45 system-ui,Arial,sans-serif;background:#0c1425;color:#f1f6ff}body{display:flex;justify-content:center;padding:24px 12px}main{width:min(760px,100%);text-align:center}h1{margin:0 0 3px;font-size:clamp(26px,5vw,38px)}.sub{color:#99abc8;font-size:13px;margin:0 0 18px}.panel{border:1px solid #293950;border-radius:18px;padding:17px;background:#152138}button{font:inherit;cursor:pointer;color:inherit;border:1px solid #526383;border-radius:10px;background:#283e60;padding:9px 14px}button:hover:not(:disabled){background:#34527c}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:15px 0}#status{min-height:24px;color:#c3d3ed;font-weight:650}.foot{font-size:12px;color:#91a6c6;margin:20px 0}
+canvas{display:block;width:min(410px,93vw);height:auto;aspect-ratio:3/4;border-radius:16px;margin:16px auto;box-shadow:0 15px 35px #0007;background:#76c9ec;touch-action:manipulation}
+
+</style></head><body><main><h1>Flappy Bird</h1><p class="sub">Independently programmed Liqua Edition · No external game assets</p>
+<div class="panel"><strong>Score: <span id="score">0</span> · Best: <span id="best">0</span></strong>
+<canvas id="game" width="420" height="560" aria-label="Tap or press Space to fly"></canvas>
+<p id="status">Tap, click, or press Space to flap.</p>
+<button type="button" id="restart">Restart</button></div><p class="foot">This is an unofficial original adaptation, not the GN-Math game's source code.</p></main><script>"use strict";
+const c=document.getElementById("game"),ctx=c.getContext("2d"),W=c.width,H=c.height,GROUND=H-55;
+const scoreEl=document.getElementById("score"),bestEl=document.getElementById("best"),status=document.getElementById("status");
+let bird,pipes,score,best=0,frames,mode,frameId;
+function reset(){bird={x:105,y:230,v:0};pipes=[];score=0;frames=0;mode="ready";status.textContent="Tap or press Space to start.";scoreEl.textContent=0;draw()}
+function flap(){
+ if(mode==="over")reset();
+ if(mode==="ready"){mode="play";status.textContent="Keep flapping!";loop()}
+ bird.v=-6.2;
+}
+function end(){if(mode!=="play")return;mode="over";best=Math.max(best,score);bestEl.textContent=best;status.textContent="Round over. Tap to try again.";cancelAnimationFrame(frameId);draw()}
+function update(){
+ frames++;bird.v+=.34;bird.y+=bird.v;
+ if(frames%108===0){const center=145+Math.random()*230;pipes.push({x:W+10,gap:center,scored:false})}
+ for(const p of pipes){
+ p.x-=2.45;
+ if(!p.scored&&p.x+64<bird.x){p.scored=true;score++;scoreEl.textContent=score}
+ const xhit=bird.x+16>p.x&&bird.x-16<p.x+64;
+ if(xhit&&(bird.y-16<p.gap-90||bird.y+16>p.gap+90)){end();return}
+ }
+ pipes=pipes.filter(p=>p.x>-70);
+ if(bird.y-16<0||bird.y+16>GROUND){end();return}
+}
+function draw(){
+ ctx.fillStyle="#8cd0ef";ctx.fillRect(0,0,W,H);
+ ctx.fillStyle="#c9ecf9";for(let i=0;i<5;i++){const x=(i*113+30-(frames*0.24)%566+566)%566-60,y=90+i%3*110;ctx.beginPath();ctx.ellipse(x,y,46,16,0,0,Math.PI*2);ctx.fill()}
+ for(const p of pipes){const top=p.gap-90,low=p.gap+90;ctx.fillStyle="#2d9254";ctx.fillRect(p.x,0,64,top);ctx.fillRect(p.x,low,64,GROUND-low);
+ ctx.fillStyle="#56c579";ctx.fillRect(p.x+7,0,10,top);ctx.fillRect(p.x+7,low,10,GROUND-low);
+ ctx.fillStyle="#256e41";ctx.fillRect(p.x-4,top-20,72,20);ctx.fillRect(p.x-4,low,72,20)}
+ ctx.fillStyle="#b4d77f";ctx.fillRect(0,GROUND,W,8);ctx.fillStyle="#886b52";ctx.fillRect(0,GROUND+8,W,H-GROUND-8);
+ ctx.save();ctx.translate(bird.x,bird.y);ctx.rotate(Math.max(-.45,Math.min(.85,bird.v*.07)));ctx.fillStyle="#ffe573";ctx.beginPath();ctx.arc(0,0,17,0,Math.PI*2);ctx.fill();
+ ctx.fillStyle="#f8a65a";ctx.beginPath();ctx.ellipse(-5,6,10,5,-.2,0,Math.PI*2);ctx.fill();
+ ctx.fillStyle="#fff";ctx.beginPath();ctx.arc(8,-7,6,0,Math.PI*2);ctx.fill();ctx.fillStyle="#182837";ctx.beginPath();ctx.arc(10,-7,2.5,0,Math.PI*2);ctx.fill();
+ ctx.fillStyle="#ef9252";ctx.beginPath();ctx.moveTo(14,3);ctx.lineTo(27,6);ctx.lineTo(14,10);ctx.fill();ctx.restore();
+ if(mode!=="play"){ctx.fillStyle="#10203acb";ctx.fillRect(20,190,W-40,120);ctx.fillStyle="#fff";ctx.textAlign="center";ctx.font="bold 27px system-ui";ctx.fillText(mode==="over"?"Round over!":"Ready to fly?",W/2,238);ctx.font="16px system-ui";ctx.fillText("Tap or press Space",W/2,269)}
+}
+function loop(){if(mode!=="play")return;update();draw();if(mode==="play")frameId=requestAnimationFrame(loop)}
+c.addEventListener("pointerdown",e=>{e.preventDefault();flap()});
+document.addEventListener("keydown",e=>{if(e.code==="Space"){e.preventDefault();if(!e.repeat)flap()}});
+document.getElementById("restart").onclick=reset;reset();
+</script></body></html>
