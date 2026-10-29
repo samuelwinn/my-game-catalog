@@ -1,99 +1,97 @@
-<html>
-
-
-<!-- Ultimate Game Stash file--> 
-<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
-
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<script src="//www.google.com/jsapi"></script>
-	<script>
-		window.parent.maeExportApis_();
-	</script>
-
-	<style>
-		body {
-			overflow: hidden;
-			background: #000000;
-			margin-top: 0;
-			margin-left: 0;
-			color: #000000;
-		}
-
-		#startButton {
-			display: block;
-			width: 160px;
-			height: 40px;
-			background-color: #4CAF50;
-			color: white;
-			text-align: center;
-			text-decoration: none;
-			font-size: 16px;
-			margin: 20px auto;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 8px;
-			cursor: pointer;
-			font-family: 'Press Start 2P', cursive;
-			box-shadow: 0px 0px 10px 2px #000000;
-		}
-	</style>
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
-	<style type="text/css">
-		#button {
-			display: none;
-		}
-
-		.imgb_vis {
-			animation: imgb-animation 7s linear;
-		}
-
-		@keyframes imgb-animation {
-			10% {
-				transform: translateX(0);
-			}
-
-			20% {
-				transform: translateX(100px);
-			}
-
-			90% {
-				transform: translateX(100px);
-			}
-
-			100% {
-				transform: translateX(0);
-			}
-		}
-	</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Famidash — Liqua</title>
+<!-- Famidash: a Geometry Dash demake for NES. https://github.com/tfdsoft/famidash
+     NES ROM location preserved from Liqua's existing game file.
+     EmulatorJS runtime: https://emulatorjs.org/docs/embed/ -->
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;color:#fff;font:16px system-ui,Arial,sans-serif}
+  #stage{height:100%;width:100%;position:relative;display:flex;align-items:center;justify-content:center}
+  #game{height:100%;width:100%;display:none}
+  #intro{text-align:center;max-width:90%;display:flex;align-items:center;flex-direction:column;gap:15px}
+  #startButton{font:700 17px system-ui,Arial,sans-serif;border:0;border-radius:10px;background:#39aa67;color:#fff;padding:14px 40px;cursor:pointer}
+  #startButton:focus-visible{outline:3px solid #fff;outline-offset:4px}
+  #status{font-size:13px;color:#ced4df;max-width:500px;white-space:pre-wrap}
+  #status[hidden]{display:none}
+</style>
 </head>
-
 <body>
-	<div style="width: 100vw; height: 100vh;max-width:100%">
-		<div id="game" style="display: none;"></div>
-		<button id="startButton">PLAY</button>
-	</div>
-	<script>
-		document.getElementById("game").style.display = "none";
-            function startGame() {
-                document.getElementById("game").style.display = "block";
-                document.getElementById("startButton").style.display = "none";
-                EJS_player = "#game";
-                EJS_core = "nes";
-                EJS_color = "#000000";
-                EJS_startOnLoaded = true;
-                EJS_pathtodata = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data";
-                EJS_gameUrl = "https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@c37a3523fe083349a08df217681649513293a74b/famidash.nes";
-                loadGame(); 
-            }
-            document.getElementById("startButton").addEventListener("click", startGame);
-            function loadGame() {
-                var script = document.createElement("script");
-                script.src = "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data/loader.js";
-                document.body.appendChild(script);
-		var script = document.createElement("script");
-                script.src = "https://cdn.jsdelivr.net/gh/a456pur/seraph@ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7/storage/js/cloak.js";
-                document.body.appendChild(script);
-            }
-	</script>
+<div id="stage">
+  <div id="intro">
+    <button type="button" id="startButton">PLAY FAMIDASH</button>
+    <div id="status" role="status" aria-live="polite" hidden></div>
+  </div>
+  <div id="game" aria-label="Famidash NES game"></div>
+</div>
+<script>
+(function(){
+ 'use strict';
+ const play=document.getElementById('startButton');
+ const intro=document.getElementById('intro');
+ const game=document.getElementById('game');
+ const status=document.getElementById('status');
+ let started=false;
+ function showStatus(message){status.textContent=message;status.hidden=!message;}
+ function showFailure(message){game.style.display='none';intro.style.display='flex';play.disabled=false;play.textContent='RETRY FAMIDASH';started=false;showStatus(message);}
+ // A Google Sites iframe can have an opaque origin. EmulatorJS checks localStorage
+ // and IndexedDB, which can throw SecurityError in that environment.
+ function enableSandboxCompatibility(){
+  try{
+   const key='__liqua_emulator_storage_check__';
+   window.localStorage.setItem(key,'1');
+   window.localStorage.removeItem(key);
+  }catch(error){
+   const saved=new Map();
+   const storage={
+    getItem(key){key=String(key);return saved.has(key)?saved.get(key):null},
+    setItem(key,value){saved.set(String(key),String(value))},
+    removeItem(key){saved.delete(String(key))},
+    clear(){saved.clear()},
+    key(index){return Array.from(saved.keys())[index]??null},
+    get length(){return saved.size}
+   };
+   try{Object.defineProperty(window,'localStorage',{configurable:true,value:storage})}catch(e){}
+  }
+  try{
+   if(window.indexedDB){
+    const req=window.indexedDB.open('__liqua_emulator_probe__');
+    req.onsuccess=function(){try{req.result.close()}catch(e){}};
+   }
+  }catch(error){
+   try{Object.defineProperty(window,'indexedDB',{configurable:true,value:undefined})}catch(e){}
+  }
+ }
+ play.addEventListener('click',function(){
+  if(started)return;
+  started=true;
+  play.disabled=true;
+  showStatus('Loading Famidash...');
+  enableSandboxCompatibility();
+  window.EJS_player='#game';
+  window.EJS_core='nes';
+  window.EJS_color='#000000';
+  window.EJS_startOnLoaded=true;
+  window.EJS_gameName='Famidash';
+  window.EJS_pathtodata='https://cdn.emulatorjs.org/stable/data/';
+  window.EJS_gameUrl='https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@c37a3523fe083349a08df217681649513293a74b/famidash.nes';
+  window.EJS_ready=function(){showStatus('');intro.style.display='none';};
+  window.EJS_onGameStart=function(){showStatus('');intro.style.display='none';};
+  game.style.display='block';
+  const script=document.createElement('script');
+  script.src='https://cdn.emulatorjs.org/stable/data/loader.js';
+  script.async=true;
+  script.onerror=function(){showFailure('The emulator could not load. Check your internet connection or try again later.');};
+  document.body.appendChild(script);
+ });
+ window.addEventListener('unhandledrejection',function(event){
+  if(!started)return;
+  showStatus('An emulator resource failed to load. Open this game in a new tab, or try again later.');
+ });
+})();
+</script>
+</body>
+</html>
