@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, '..');
 const endpoint = 'http://127.0.0.1:9228';
 const wait = ms => new Promise(r => setTimeout(r, ms));
 const inventory = JSON.parse(fs.readFileSync(path.join(__dirname, 'emulator-audit-inventory.json'), 'utf8'));
+for(const game of JSON.parse(fs.readFileSync(path.join(root,'games-catalog.json'),'utf8')))if(!inventory.some(item=>item.html===game.html))inventory.push(game);
 const mode = process.argv[2] || 'baseline';
 const vm = require('node:vm');
 const helpers = {};
@@ -90,7 +91,7 @@ async function test(game, port) {
   await wait(6000);
   const state=await evaluate(`(()=>{const c=document.querySelector('canvas');const r=c?.getBoundingClientRect();let emulator;try{emulator=window.EJS_emulator}catch{}return {text:document.body.innerText.slice(0,700),emulator:typeof emulator,started:emulator?.started,core:window.EJS_core,canvas:c?{width:c.width,height:c.height,visibleWidth:r.width,visibleHeight:r.height}:null,gameDisplay:document.querySelector('#game')?getComputedStyle(document.querySelector('#game')).display:null,storage:(()=>{try{return typeof localStorage}catch(e){return e.name}})()}})()`,context);
   const result={name:game.name,mode,clicked,state,errors:[...new Set(errors)],network:[...new Set(network)],consoleMessages:[...new Set(consoleMessages)],bytes};
-  if(state?.started&&state.canvas?.visibleWidth>0){
+  if(state?.canvas?.visibleWidth>0){
    const shot=await cdp.send('Page.captureScreenshot',{format:'png'});
    const dir=path.join(root,'.tmp-game-audit');fs.mkdirSync(dir,{recursive:true});
    fs.writeFileSync(path.join(dir,game.name.replace(/[^a-z0-9]+/gi,'-')+'-'+mode+'.png'),Buffer.from(shot.result.data,'base64'));

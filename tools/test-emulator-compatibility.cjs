@@ -52,3 +52,15 @@ test('document preparation is limited to emulator games and retains ROM and BIOS
  assert.ok(fixed.includes('original.nes'));assert.ok(fixed.includes('original.bin'));
  for(const script of fixed.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi))new Function(script[1]);
 });
+test('Minecraft 1.8.8 gets its browser origin and switching games restores the sandbox',()=>{
+ const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
+ const helper=html.slice(html.indexOf('function configureGameFrame('),html.indexOf('function safeBaseFor('));
+ const context={};vm.createContext(context);vm.runInContext(helper,context);
+ const attributes=new Map([['sandbox','restricted']]);
+ const frame={removeAttribute(name){attributes.delete(name)},setAttribute(name,value){attributes.set(name,value)}};
+ context.configureGameFrame(frame,{html:'games/Minecraft 1.8.8 (EaglecraftX).html.gz'});
+ assert.equal(attributes.has('sandbox'),false);
+ context.configureGameFrame(frame,{html:'games/2048.html'});
+ assert.match(attributes.get('sandbox'),/allow-scripts/);
+ assert.ok(!attributes.get('sandbox').includes('allow-same-origin'));
+});

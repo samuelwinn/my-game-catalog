@@ -63,8 +63,8 @@ const GAME_REVISIONS={'games/Famidash.html':'79890e771a44e55b12374132259e5013e43
 function fileUrl(game){const revision=GAME_REVISIONS[game.html];return (revision?CDN.replace('@'+BRANCH+'/', '@'+revision+'/'):CDN)+filePath(game)}
 function configureGameFrame(frame,game,html=''){
 
- // Match the working gn-math iframe for EmulatorJS; sandbox other game types.
- if(game.html==='games/Famidash.html'||/\bEJS_player\s*=/.test(html))frame.removeAttribute('sandbox');
+ // EmulatorJS and this Eaglercraft client need a browser origin for storage and workers.
+ if(game.html==='games/Famidash.html'||game.html==='games/Minecraft 1.8.8 (EaglecraftX).html.gz'||/\bEJS_player\s*=/.test(html))frame.removeAttribute('sandbox');
  else frame.setAttribute('sandbox','allow-scripts allow-forms allow-modals allow-pointer-lock allow-downloads');
 }
 function safeBaseFor(game){return new URL('.',fileUrl(game)).href}
