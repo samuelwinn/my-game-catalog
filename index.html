@@ -59,7 +59,7 @@ function showMore(){const end=Math.min(visible.length,shown+BATCH);const frag=do
 function render(){visible=getVisible();els.cards.replaceChildren();shown=0;els.empty.hidden=visible.length>0;els.status.textContent=`${visible.length.toLocaleString()} game${visible.length===1?'':'s'}`;els.sectionTitle.textContent='All games';showMore()}
 function filePath(game){if(!game.html||!/^games\/[\w\W]+$/.test(game.html)||game.html.includes('..'))throw new Error('Invalid game path');return game.html.split('/').map(encodeURIComponent).join('/')}
 // Pin repaired games so CDN caches cannot serve the previous loader.
-const GAME_REVISIONS={'games/Famidash.html':'99db5344ffd29faea3f1dbefb7c4184dd17b0d3f'};
+const GAME_REVISIONS={'games/Famidash.html':'79890e771a44e55b12374132259e5013e43ac992'};
 function fileUrl(game){const revision=GAME_REVISIONS[game.html];return (revision?CDN.replace('@'+BRANCH+'/', '@'+revision+'/'):CDN)+filePath(game)}
 function configureGameFrame(frame,game){
  // Famidash's working EmulatorJS build needs browser APIs blocked by an opaque sandbox origin.
