@@ -41,6 +41,14 @@
  // A Google Sites iframe can have an opaque origin. EmulatorJS checks localStorage
  // and IndexedDB, which can throw SecurityError in that environment.
  function enableSandboxCompatibility(){
+  // Embedders may deny gamepad access even when keyboard controls are available.
+  // EmulatorJS polls this API during startup, so a denied gamepad must mean no pads.
+  if(typeof navigator.getGamepads==='function'){
+   const getGamepads=navigator.getGamepads.bind(navigator);
+   try{Object.defineProperty(navigator,'getGamepads',{configurable:true,value:function(){
+    try{return getGamepads()}catch(error){if(error.name==='SecurityError')return [];throw error}
+   }})}catch(error){}
+  }
   try{
    const key='__liqua_emulator_storage_check__';
    window.localStorage.setItem(key,'1');
