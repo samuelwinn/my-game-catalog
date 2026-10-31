@@ -68,6 +68,9 @@ test('Minecraft 1.8.8 gets its browser origin and switching games restores the s
  context.configureGameFrame(frame,{html:'games/Minecraft 1.8.8 (EaglecraftX).html'});
  assert.equal(attributes.has('sandbox'),false);
  context.configureGameFrame(frame,{html:'games/2048.html'});
+ context.configureGameFrame(frame,{html:'games/Drive Mad.html'});
+ assert.equal(attributes.has('sandbox'),false);
+ context.configureGameFrame(frame,{html:'games/2048.html'});
  assert.match(attributes.get('sandbox'),/allow-scripts/);
  assert.ok(!attributes.get('sandbox').includes('allow-same-origin'));
 });

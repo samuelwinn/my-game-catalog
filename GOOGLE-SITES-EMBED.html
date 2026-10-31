@@ -64,7 +64,7 @@ function fileUrl(game){const revision=GAME_REVISIONS[game.html];return (revision
 function configureGameFrame(frame,game,html=''){
 
  // EmulatorJS and this Eaglercraft client need a browser origin for storage and workers.
- if(game.html==='games/Famidash.html'||(game.html==='games/Minecraft 1.8.8 (EaglecraftX).html.gz'||game.html==='games/Minecraft 1.8.8 (EaglecraftX).html')||/\bEJS_player\s*=/.test(html))frame.removeAttribute('sandbox');
+ if(game.html==='games/Drive Mad.html'||game.html==='games/Famidash.html'||(game.html==='games/Minecraft 1.8.8 (EaglecraftX).html.gz'||game.html==='games/Minecraft 1.8.8 (EaglecraftX).html')||/\bEJS_player\s*=/.test(html))frame.removeAttribute('sandbox');
  else frame.setAttribute('sandbox','allow-scripts allow-forms allow-modals allow-pointer-lock allow-downloads');
 }
 function safeBaseFor(game){return new URL('.',fileUrl(game)).href}
@@ -248,8 +248,8 @@ function openInBlank(){
 function closeGame(){++requestId;currentGameCode='';resetCopyButton();els.viewer.classList.remove('open');els.frame.removeAttribute('srcdoc');els.frame.src='about:blank';document.body.style.overflow='';current=null}
 async function loadCatalog(){try{
  let data;
- try{const primary=await fetch(RAW+'games-catalog.json',{cache:'no-store'});if(!primary.ok)throw Error('GitHub returned HTTP '+primary.status);data=await primary.json()}
- catch(primaryError){const backup=await fetch(CDN+'games-catalog.json',{cache:'no-store'});if(!backup.ok)throw Error('Catalog unavailable from GitHub and jsDelivr (HTTP '+backup.status+')');data=await backup.json()}
+ try{const primary=await fetch(RAW+'games-catalog.json?t='+Date.now(),{cache:'no-store'});if(!primary.ok)throw Error('GitHub returned HTTP '+primary.status);data=await primary.json()}
+ catch(primaryError){const backup=await fetch(CDN+'games-catalog.json?t='+Date.now(),{cache:'no-store'});if(!backup.ok)throw Error('Catalog unavailable from GitHub and jsDelivr (HTTP '+backup.status+')');data=await backup.json()}
 if(!Array.isArray(data))throw Error('Catalog is not an array');games=data.filter(x=>x&&typeof x.name==='string'&&typeof x.html==='string').map(game=>game.html==='games/Minecraft 1.8.8 (EaglecraftX).html.gz'?{...game,html:'games/Minecraft 1.8.8 (EaglecraftX).html',compressed:false}:game).sort((a,b)=>a.name.localeCompare(b.name,undefined,{numeric:true,sensitivity:'base'}));if(!games.length)throw Error('The catalog is empty');els.headerCount.textContent=games.length.toLocaleString()+' games';render()}catch(e){els.error.hidden=false;els.error.textContent='Could not load the game catalog. '+e.message+'\n\nPublish all project files to the main branch of the public GitHub repository. The catalog is fetched from GitHub, with jsDelivr as a fallback. Game files use jsDelivr first and fall back to GitHub. No GitHub Pages deployment is required.';els.status.textContent='Catalog unavailable';els.headerCount.textContent='Unavailable'}}
 
 els.search.addEventListener('input',render);
