@@ -11,7 +11,8 @@
   *{box-sizing:border-box}
   html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;color:#fff;font:16px system-ui,Arial,sans-serif}
   #stage{height:100%;width:100%;position:relative;display:flex;align-items:center;justify-content:center}
-  #game{height:100%;width:100%;display:none}
+  /* EmulatorJS replaces inline styles during startup; the default must stay visible. */
+  #game{height:100%;width:100%;display:block}
   #intro{text-align:center;max-width:90%;display:flex;align-items:center;flex-direction:column;gap:15px}
   #startButton{font:700 17px system-ui,Arial,sans-serif;border:0;border-radius:10px;background:#39aa67;color:#fff;padding:14px 40px;cursor:pointer}
   #startButton:focus-visible{outline:3px solid #fff;outline-offset:4px}
@@ -25,7 +26,7 @@
     <button type="button" id="startButton">PLAY FAMIDASH</button>
     <div id="status" role="status" aria-live="polite" hidden></div>
   </div>
-  <div id="game" aria-label="Famidash NES game"></div>
+  <div id="game" style="display:none" aria-label="Famidash NES game"></div>
 </div>
 <script>
 (function(){
