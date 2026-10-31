@@ -58,7 +58,15 @@ function getVisible(){const q=els.search.value.toLowerCase().trim();return q?gam
 function showMore(){const end=Math.min(visible.length,shown+BATCH);const frag=document.createDocumentFragment();for(let i=shown;i<end;i++)frag.appendChild(createCard(visible[i]));els.cards.appendChild(frag);shown=end;els.more.hidden=shown>=visible.length}
 function render(){visible=getVisible();els.cards.replaceChildren();shown=0;els.empty.hidden=visible.length>0;els.status.textContent=`${visible.length.toLocaleString()} game${visible.length===1?'':'s'}`;els.sectionTitle.textContent='All games';showMore()}
 function filePath(game){if(!game.html||!/^games\/[\w\W]+$/.test(game.html)||game.html.includes('..'))throw new Error('Invalid game path');return game.html.split('/').map(encodeURIComponent).join('/')}
-function fileUrl(game){return CDN+filePath(game)}
+// Pin repaired games so CDN caches cannot serve the previous loader.
+const GAME_REVISIONS={'games/Famidash.html':'ab3efc789b6a705d5e6d7f8bd72a07428089f306'};
+function fileUrl(game){const revision=GAME_REVISIONS[game.html];return (revision?CDN.replace('@'+BRANCH+'/', '@'+revision+'/'):CDN)+filePath(game)}
+function configureGameFrame(frame,game){
+ // Famidash's working EmulatorJS build needs browser APIs blocked by an opaque sandbox origin.
+ // Match its working gn-math iframe; preserve the existing sandbox for other games.
+ if(game.html==='games/Famidash.html')frame.removeAttribute('sandbox');
+ else frame.setAttribute('sandbox','allow-scripts allow-forms allow-modals allow-pointer-lock allow-downloads');
+}
 function safeBaseFor(game){return new URL('.',fileUrl(game)).href}
 function insertBase(html,base){if(/<base(?:\s|>)/i.test(html))return html;const tag=`<base href="${base.replaceAll('&','&amp;').replaceAll('"','&quot;')}">`;return /<head\b[^>]*>/i.test(html)?html.replace(/<head\b[^>]*>/i,s=>s+tag):tag+html}
 async function decompressGzip(buffer){if(!('DecompressionStream' in window))throw new Error('This browser cannot decompress the larger games. Use a current version of Chrome, Edge, Firefox, or Safari.');const stream=new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'));return await new Response(stream).text()}
@@ -67,7 +75,9 @@ function setLoading(on,msg='Loading game…',error=''){els.loading.hidden=!on;el
 async function loadGameDocument(game){
  // Prefer the latest GitHub source so game repairs take effect without waiting
  // for jsDelivr's @main cache to expire. Fall back to the CDN when necessary.
- const sources=[RAW+filePath(game),fileUrl(game)];
+ const revision=GAME_REVISIONS[game.html];
+ const rawBase=revision?RAW.replace('/'+BRANCH+'/', '/'+revision+'/'):RAW;
+ const sources=[rawBase+filePath(game),fileUrl(game)];
  let response,lastError;
  for(const url of sources){
   try{
@@ -88,6 +98,7 @@ async function openGame(game){
  try{
   const html=await loadGameDocument(game);
   if(id!==requestId)return;
+  configureGameFrame(els.frame,game);
   els.frame.srcdoc=html;setLoading(false);
  }catch(e){
   if(id!==requestId)return;
@@ -111,7 +122,7 @@ function openInBlank(){
   doc.body.style.cssText='width:100%;height:100%;margin:0;padding:0;overflow:hidden;background:#000;';
   const frame=doc.createElement('iframe');
   frame.title=game.name;
-  frame.setAttribute('sandbox','allow-scripts allow-forms allow-modals allow-pointer-lock allow-downloads');
+  configureGameFrame(frame,game);
   frame.setAttribute('allow','autoplay; fullscreen; gamepad');
   frame.setAttribute('allowfullscreen','');
   frame.referrerPolicy='no-referrer';
