@@ -71,3 +71,15 @@ test('Minecraft 1.8.8 gets its browser origin and switching games restores the s
  assert.match(attributes.get('sandbox'),/allow-scripts/);
  assert.ok(!attributes.get('sandbox').includes('allow-same-origin'));
 });
+test('a cached catalog still selects the replacement Minecraft HTML',async()=>{
+ const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
+ const loader=html.slice(html.indexOf('async function loadCatalog('),html.indexOf('els.search.addEventListener'));
+ const oldGame={name:'Minecraft 1.8.8 (EaglecraftX)',html:'games/Minecraft 1.8.8 (EaglecraftX).html.gz',compressed:true};
+ const regular={name:'2048',html:'games/2048.html'};
+ const context={RAW:'https://raw.example/',CDN:'https://cdn.example/',games:[],els:{headerCount:{},status:{},error:{}},render(){},fetch:async()=>({ok:true,json:async()=>[oldGame,regular]})};
+ vm.createContext(context);vm.runInContext(loader,context);await context.loadCatalog();
+ const repaired=context.games.find(game=>game.name===oldGame.name);
+ assert.equal(repaired.html,'games/Minecraft 1.8.8 (EaglecraftX).html');
+ assert.equal(repaired.compressed,false);
+ assert.equal(context.games.find(game=>game.name==='2048'),regular);
+});

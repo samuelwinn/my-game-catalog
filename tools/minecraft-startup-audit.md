@@ -7,6 +7,8 @@ This file contains the replacement HTML supplied by the user, including its
 pinned classes.min.js, fix-webm-duration.js, assets.epk, server list and focus
 handlers. It is plain HTML, so this catalog entry no longer sets compressed:true.
 The old compressed asset is no longer selected by the catalog.
+The viewer also upgrades stale cached catalog entries to the replacement path
+and pins its game download to the replacement commit, avoiding old CDN copies.
 
 All three viewer/Google Sites sources permit this client to use a browser origin
 for storage and workers, as they did for the previous compressed client.
