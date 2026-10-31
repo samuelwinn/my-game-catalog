@@ -1,0 +1,4963 @@
+[
+  {
+    "name": "007 Nightfire",
+    "html": "games/007 Nightfire.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "7 Grand Dad",
+    "html": "games/7 Grand Dad.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "nes"
+  },
+  {
+    "name": "Ace Combat 2",
+    "html": "games/Ace Combat 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Ace Combat 3",
+    "html": "games/Ace Combat 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Advance Wars",
+    "html": "games/Advance Wars.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Advance Wars 2",
+    "html": "games/Advance Wars 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Alien vs. Predator",
+    "html": "games/Alien vs. Predator.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "An Ordinary Sonic rom Hack",
+    "html": "games/An Ordinary Sonic rom Hack.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Animal Crossing-Wild World",
+    "html": "games/Animal Crossing-Wild World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Another World",
+    "html": "games/Another World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "B3313",
+    "html": "games/B3313.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Baby Kaizo World",
+    "html": "games/Baby Kaizo World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Backyard Soccer",
+    "html": "games/Backyard Soccer.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Banjo-Kazooie",
+    "html": "games/Banjo-Kazooie.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Banjo-Tooie",
+    "html": "games/Banjo-Tooie.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Battlezone",
+    "html": "games/Battlezone.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Beamrider",
+    "html": "games/Beamrider.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Ben 10 - Alien Force",
+    "html": "games/Ben 10 - Alien Force.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Ben 10 - Galactic Racing",
+    "html": "games/Ben 10 - Galactic Racing.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Ben 10 - Omniverse",
+    "html": "games/Ben 10 - Omniverse.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Ben 10 - Protector of Earth",
+    "html": "games/Ben 10 - Protector of Earth.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Ben 10 - Ultimate Alien",
+    "html": "games/Ben 10 - Ultimate Alien.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Bomberman",
+    "html": "games/Bomberman.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Bomberman 2",
+    "html": "games/Bomberman 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Bubsy",
+    "html": "games/Bubsy.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Bushido Blade",
+    "html": "games/Bushido Blade.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Call of Duty - Black Ops",
+    "html": "games/Call of Duty - Black Ops.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Call of Duty - Modern Warfare - Mobilized",
+    "html": "games/Call of Duty - Modern Warfare - Mobilized.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Call of Duty - Modern Warfare 3 - Defiance",
+    "html": "games/Call of Duty - Modern Warfare 3 - Defiance.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Call of Duty - World at War",
+    "html": "games/Call of Duty - World at War.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Call of Duty 4 - Modern Warfare",
+    "html": "games/Call of Duty 4 - Modern Warfare.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Cannon Fodder",
+    "html": "games/Cannon Fodder.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Castlevania",
+    "html": "games/Castlevania.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Castlevania - Bloodlines",
+    "html": "games/Castlevania - Bloodlines.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "Castlevania - Circle of the Moon",
+    "html": "games/Castlevania - Circle of the Moon.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Castlevania 2",
+    "html": "games/Castlevania 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Castlevania 3",
+    "html": "games/Castlevania 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Castlevania Aria of Sorrow",
+    "html": "games/Castlevania Aria of Sorrow.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Chips Challenge",
+    "html": "games/Chips Challenge.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "lynx"
+  },
+  {
+    "name": "Chrono Trigger",
+    "html": "games/Chrono Trigger.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Colin Mcrae Rally",
+    "html": "games/Colin Mcrae Rally.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Commander Keen 4",
+    "html": "games/Commander Keen 4.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Commander Keen 5",
+    "html": "games/Commander Keen 5.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Commander Keen 6",
+    "html": "games/Commander Keen 6.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Conkers Bad Fur Day",
+    "html": "games/Conkers Bad Fur Day.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Contra",
+    "html": "games/Contra.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Cooking Mama",
+    "html": "games/Cooking Mama.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Cooking Mama 2",
+    "html": "games/Cooking Mama 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Cooking Mama 3",
+    "html": "games/Cooking Mama 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Crash Bandicoot",
+    "html": "games/Crash Bandicoot.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Crash Bandicoot 2",
+    "html": "games/Crash Bandicoot 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "CTGP Nitro",
+    "html": "games/CTGP Nitro.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "De Blob 2",
+    "html": "games/De Blob 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Dementium - The Ward",
+    "html": "games/Dementium - The Ward.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Diablo",
+    "html": "games/Diablo.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Dig Dug",
+    "html": "games/Dig Dug.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Dig Dug 2",
+    "html": "games/Dig Dug 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Donkey Kong",
+    "html": "games/Donkey Kong.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Donkey kong 64",
+    "html": "games/Donkey kong 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Donkey Kong Country",
+    "html": "games/Donkey Kong Country.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Donkey Kong Country 2",
+    "html": "games/Donkey Kong Country 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Donkey Kong Country 3",
+    "html": "games/Donkey Kong Country 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Doom",
+    "html": "games/Doom.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Doom 2",
+    "html": "games/Doom 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Doom 64",
+    "html": "games/Doom 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Dr. Mario",
+    "html": "games/Dr. Mario.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Dragon Ball Advanced Adventure",
+    "html": "games/Dragon Ball Advanced Adventure.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Dragon Ball Origins",
+    "html": "games/Dragon Ball Origins.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Dragon Ball Origins 2",
+    "html": "games/Dragon Ball Origins 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Dragon Ball Z - Attack Of the Saiyans",
+    "html": "games/Dragon Ball Z - Attack Of the Saiyans.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Dragon Ball Z - Supersonic Warriors",
+    "html": "games/Dragon Ball Z - Supersonic Warriors.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Dragon Ball Z - the Legacy of Goku",
+    "html": "games/Dragon Ball Z - the Legacy of Goku.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Dragon Quest IX",
+    "html": "games/Dragon Quest IX.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Duck hunt",
+    "html": "games/Duck hunt.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Ducktales",
+    "html": "games/Ducktales.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "nes"
+  },
+  {
+    "name": "Dynamite Headdy",
+    "html": "games/Dynamite Headdy.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "E.T. - the Extra-Terrestrial",
+    "html": "games/E.T. - the Extra-Terrestrial.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Earthbound",
+    "html": "games/Earthbound.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Earthbound 3",
+    "html": "games/Earthbound 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Earthworm Jim",
+    "html": "games/Earthworm Jim.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Earthworm Jim 2",
+    "html": "games/Earthworm Jim 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Enduro",
+    "html": "games/Enduro.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Etrian Odyssey",
+    "html": "games/Etrian Odyssey.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Evolution-dino Dudes",
+    "html": "games/Evolution-dino Dudes.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Excitebike 64",
+    "html": "games/Excitebike 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "F-zero",
+    "html": "games/F-zero.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "F-zero X",
+    "html": "games/F-zero X.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Famidash",
+    "html": "games/Famidash.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubblfan/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": true,
+    "parentGoogle": false,
+    "core": "nes"
+  },
+  {
+    "name": "FIFA 07",
+    "html": "games/FIFA 07.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "FIFA 10",
+    "html": "games/FIFA 10.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "FIFA 11",
+    "html": "games/FIFA 11.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "FIFA 2000",
+    "html": "games/FIFA 2000.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "FIFA 99",
+    "html": "games/FIFA 99.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "FIFA International Soccer",
+    "html": "games/FIFA International Soccer.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "FIFA Road To World Cup 98",
+    "html": "games/FIFA Road To World Cup 98.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "FIFA Soccer 06",
+    "html": "games/FIFA Soccer 06.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "FIFA Soccer 95",
+    "html": "games/FIFA Soccer 95.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "FIFA Soccer 96",
+    "html": "games/FIFA Soccer 96.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "FIFA Soccer 97",
+    "html": "games/FIFA Soccer 97.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "FIFA Street 2",
+    "html": "games/FIFA Street 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "FIFA World Cup 98",
+    "html": "games/FIFA World Cup 98.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Final Fantasy",
+    "html": "games/Final Fantasy.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Final Fantasy II",
+    "html": "games/Final Fantasy II.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Final Fantasy III",
+    "html": "games/Final Fantasy III.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Final Fantasy Mystic Quest",
+    "html": "games/Final Fantasy Mystic Quest.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Final Fantasy Tactics",
+    "html": "games/Final Fantasy Tactics.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Final Fantasy VI",
+    "html": "games/Final Fantasy VI.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Final Fantasy VII (disc one)",
+    "html": "games/Final Fantasy VII (disc one).html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Final Fantasy VII (disc three)",
+    "html": "games/Final Fantasy VII (disc three).html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Final Fantasy VII (disc two)",
+    "html": "games/Final Fantasy VII (disc two).html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Fire Emblem",
+    "html": "games/Fire Emblem.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Galaga",
+    "html": "games/Galaga.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Game And Watch Collection",
+    "html": "games/Game And Watch Collection.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "General Chaos",
+    "html": "games/General Chaos.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Ghost Trick - Phantom Detective",
+    "html": "games/Ghost Trick - Phantom Detective.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Glover",
+    "html": "games/Glover.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Golden Sun",
+    "html": "games/Golden Sun.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Golden Sun - Dark Dawn",
+    "html": "games/Golden Sun - Dark Dawn.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Golden Sun - The Lost Age",
+    "html": "games/Golden Sun - The Lost Age.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Goldeneye 007",
+    "html": "games/Goldeneye 007.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Gran Turismo",
+    "html": "games/Gran Turismo.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Gran Turismo 2",
+    "html": "games/Gran Turismo 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Grand Theft Auto",
+    "html": "games/Grand Theft Auto.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Grand Theft Auto - Chinatown Wars",
+    "html": "games/Grand Theft Auto - Chinatown Wars.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Grand Theft Auto 2",
+    "html": "games/Grand Theft Auto 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Grand Theft Auto Advance",
+    "html": "games/Grand Theft Auto Advance.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Grimaces Birthday",
+    "html": "games/Grimaces Birthday.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gb"
+  },
+  {
+    "name": "GS Chronicles",
+    "html": "games/GS Chronicles.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Gun.smoke",
+    "html": "games/Gun.smoke.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Hajime No Ippo - the Fighting",
+    "html": "games/Hajime No Ippo - the Fighting.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Halo Combat Devolved",
+    "html": "games/Halo Combat Devolved.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gb"
+  },
+  {
+    "name": "Harvest Moon",
+    "html": "games/Harvest Moon.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Harvest Moon 64",
+    "html": "games/Harvest Moon 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Iron Soldier",
+    "html": "games/Iron Soldier.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Jet Force Gemini",
+    "html": "games/Jet Force Gemini.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "John Madden Football 93",
+    "html": "games/John Madden Football 93.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "JUMP",
+    "html": "games/JUMP.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Kaizo Mario World",
+    "html": "games/Kaizo Mario World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Ken Griffey jr. Presents Major League Baseball",
+    "html": "games/Ken Griffey jr. Presents Major League Baseball.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Kingdom Hearts Re-Coded",
+    "html": "games/Kingdom Hearts Re-Coded.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Kirby 64",
+    "html": "games/Kirby 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Kirby and the Amazing Mirror",
+    "html": "games/Kirby and the Amazing Mirror.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Kirby Squeak Squad",
+    "html": "games/Kirby Squeak Squad.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Kirby Super Star",
+    "html": "games/Kirby Super Star.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Kirby Super Star Ultra",
+    "html": "games/Kirby Super Star Ultra.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Kirbys Adventure",
+    "html": "games/Kirbys Adventure.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Kirbys Dream Land",
+    "html": "games/Kirbys Dream Land.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Kirbys Dream Land 3",
+    "html": "games/Kirbys Dream Land 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Legend of Zelda, the - Links Awakening",
+    "html": "games/Legend of Zelda, the - Links Awakening.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Legend of Zelda, the - Oracle of Seasons",
+    "html": "games/Legend of Zelda, the - Oracle of Seasons.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Legend of Zelda, The - Spirit Tracks",
+    "html": "games/Legend of Zelda, The - Spirit Tracks.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lego Batman - the Videogame",
+    "html": "games/Lego Batman - the Videogame.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lego Batman 2 - DC Super Heroes",
+    "html": "games/Lego Batman 2 - DC Super Heroes.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lego Indiana Jones - the Original Adventures",
+    "html": "games/Lego Indiana Jones - the Original Adventures.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lego Indiana Jones 2 - the Adventure Continues",
+    "html": "games/Lego Indiana Jones 2 - the Adventure Continues.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lego Ninjago - the Videogame",
+    "html": "games/Lego Ninjago - the Videogame.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lego Star Wars - the Complete Saga",
+    "html": "games/Lego Star Wars - the Complete Saga.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Lemmings",
+    "html": "games/Lemmings.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Lode Runner",
+    "html": "games/Lode Runner.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Madden Football",
+    "html": "games/Madden Football.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Madden Football 64",
+    "html": "games/Madden Football 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Madden NFL",
+    "html": "games/Madden NFL.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Madden NFL 2000",
+    "html": "games/Madden NFL 2000.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Madden NFL 2001",
+    "html": "games/Madden NFL 2001.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Madden NFL 2002",
+    "html": "games/Madden NFL 2002.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Madden NFL 94",
+    "html": "games/Madden NFL 94.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Madden NFL 95",
+    "html": "games/Madden NFL 95.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Madden NFL 96",
+    "html": "games/Madden NFL 96.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Madden NFL 98",
+    "html": "games/Madden NFL 98.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Madden NFL 99",
+    "html": "games/Madden NFL 99.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Mario & Luigi - Bowsers Inside Story",
+    "html": "games/Mario & Luigi - Bowsers Inside Story.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mario & Luigi - Partners In Time",
+    "html": "games/Mario & Luigi - Partners In Time.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mario & Luigi - Superstar Saga",
+    "html": "games/Mario & Luigi - Superstar Saga.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Mario Golf",
+    "html": "games/Mario Golf.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Mario is Missing Done Right",
+    "html": "games/Mario is Missing Done Right.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mario Kart 64",
+    "html": "games/Mario Kart 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Mario Kart 64 - Amped Up",
+    "html": "games/Mario Kart 64 - Amped Up.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mario Kart DS",
+    "html": "games/Mario Kart DS.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Mario Kart Super Circuit",
+    "html": "games/Mario Kart Super Circuit.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Mario Paint",
+    "html": "games/Mario Paint.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mario Party",
+    "html": "games/Mario Party.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mario Party 2",
+    "html": "games/Mario Party 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mario Party 3",
+    "html": "games/Mario Party 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mario Party DS",
+    "html": "games/Mario Party DS.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Mario Tennis",
+    "html": "games/Mario Tennis.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Marios Mystery Meat",
+    "html": "games/Marios Mystery Meat.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mat Hoffmans Pro BMX 2",
+    "html": "games/Mat Hoffmans Pro BMX 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Mega Man",
+    "html": "games/Mega Man.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Mega Man - The Wily Wars",
+    "html": "games/Mega Man - The Wily Wars.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "Mega Man 2",
+    "html": "games/Mega Man 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Mega Man 3",
+    "html": "games/Mega Man 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Mega Man 4",
+    "html": "games/Mega Man 4.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Mega Man 5",
+    "html": "games/Mega Man 5.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Mega Man 6",
+    "html": "games/Mega Man 6.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Mega Man 8",
+    "html": "games/Mega Man 8.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mega Man Legends",
+    "html": "games/Mega Man Legends.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mega Man X",
+    "html": "games/Mega Man X.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mega Man X2",
+    "html": "games/Mega Man X2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mega Man X3",
+    "html": "games/Mega Man X3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mega Man X4",
+    "html": "games/Mega Man X4.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Mega Man Zero",
+    "html": "games/Mega Man Zero.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Mega Man ZX",
+    "html": "games/Mega Man ZX.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Metal Gear",
+    "html": "games/Metal Gear.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Metal gear Solid",
+    "html": "games/Metal gear Solid.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Metal Slug - 1st Mission",
+    "html": "games/Metal Slug - 1st Mission.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "ngp"
+  },
+  {
+    "name": "Metal Slug - 2nd Mission",
+    "html": "games/Metal Slug - 2nd Mission.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "ngp"
+  },
+  {
+    "name": "Metal Slug Advance",
+    "html": "games/Metal Slug Advance.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Metal Sonic Hyperdrive",
+    "html": "games/Metal Sonic Hyperdrive.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Metroid",
+    "html": "games/Metroid.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Metroid 2",
+    "html": "games/Metroid 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Metroid Fusion",
+    "html": "games/Metroid Fusion.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Metroid Zero Mission",
+    "html": "games/Metroid Zero Mission.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Mike Tysons Punch Out",
+    "html": "games/Mike Tysons Punch Out.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Missile Command",
+    "html": "games/Missile Command.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Mobius Evolution",
+    "html": "games/Mobius Evolution.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Mortal Kombat",
+    "html": "games/Mortal Kombat.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mortal Kombat 2",
+    "html": "games/Mortal Kombat 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Mortal Kombat 3",
+    "html": "games/Mortal Kombat 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Mortal Kombat Advance",
+    "html": "games/Mortal Kombat Advance.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Ms. Pac-man",
+    "html": "games/Ms. Pac-man.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "N+",
+    "html": "games/N+.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "NBA Hangtime",
+    "html": "games/NBA Hangtime.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "NBA Jam",
+    "html": "games/NBA Jam.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "NBA Jam - Tournament Edition",
+    "html": "games/NBA Jam - Tournament Edition.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Need For Speed - Carbon - Own the City",
+    "html": "games/Need For Speed - Carbon - Own the City.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Need For Speed - Most Wanted",
+    "html": "games/Need For Speed - Most Wanted.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Need For Speed - Porsche Unleashed",
+    "html": "games/Need For Speed - Porsche Unleashed.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Need For Speed - Underground",
+    "html": "games/Need For Speed - Underground.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Need For Speed - Underground 2",
+    "html": "games/Need For Speed - Underground 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "New Super Mario Bros",
+    "html": "games/New Super Mario Bros.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "New Super Mario World 2 - Around the World",
+    "html": "games/New Super Mario World 2 - Around the World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "NFL Blitz",
+    "html": "games/NFL Blitz.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "NHL 2002",
+    "html": "games/NHL 2002.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "NHL Hitz 2003",
+    "html": "games/NHL Hitz 2003.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Nicktoons - Freeze Frame Frenzy",
+    "html": "games/Nicktoons - Freeze Frame Frenzy.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Nintendo World Championships 1990",
+    "html": "games/Nintendo World Championships 1990.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "nes"
+  },
+  {
+    "name": "Nintendo World Cup",
+    "html": "games/Nintendo World Cup.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Nintendogs - Lab & Friends",
+    "html": "games/Nintendogs - Lab & Friends.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "One Piece",
+    "html": "games/One Piece.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pac-man",
+    "html": "games/Pac-man.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Paper Mario",
+    "html": "games/Paper Mario.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Paper Mario Pro Mode",
+    "html": "games/Paper Mario Pro Mode.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Paper Mario-TTYD Edition",
+    "html": "games/Paper Mario-TTYD Edition.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Parappa the Rapper",
+    "html": "games/Parappa the Rapper.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Pepsiman",
+    "html": "games/Pepsiman.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Perfect Dark",
+    "html": "games/Perfect Dark.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Persona",
+    "html": "games/Persona.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Persona 2",
+    "html": "games/Persona 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Phoenix wright - Ace Attorney",
+    "html": "games/Phoenix wright - Ace Attorney.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Phoenix wright - Ace Attorney - Justice For All",
+    "html": "games/Phoenix wright - Ace Attorney - Justice For All.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Pitfall!",
+    "html": "games/Pitfall!.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Pokemon - Diamond Version",
+    "html": "games/Pokemon - Diamond Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon - Heartgold Version",
+    "html": "games/Pokemon - Heartgold Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon - Pearl Version",
+    "html": "games/Pokemon - Pearl Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon - Platinum Version",
+    "html": "games/Pokemon - Platinum Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon - Platinum Version Randomized",
+    "html": "games/Pokemon - Platinum Version Randomized.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon - SoulSilver Version",
+    "html": "games/Pokemon - SoulSilver Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Amnesia",
+    "html": "games/Pokemon Amnesia.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Battle Factory",
+    "html": "games/Pokemon Battle Factory.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gb"
+  },
+  {
+    "name": "Pokemon Black Version",
+    "html": "games/Pokemon Black Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Pokemon Black Version 2",
+    "html": "games/Pokemon Black Version 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Pokemon Blaze Black 2 Redux",
+    "html": "games/Pokemon Blaze Black 2 Redux.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Blue Version",
+    "html": "games/Pokemon Blue Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Clover",
+    "html": "games/Pokemon Clover.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Crystal",
+    "html": "games/Pokemon Crystal.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Crystal Clear",
+    "html": "games/Pokemon Crystal Clear.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gb"
+  },
+  {
+    "name": "Pokemon Dreamstone",
+    "html": "games/Pokemon Dreamstone.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Elysium A",
+    "html": "games/Pokemon Elysium A.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Elysium B",
+    "html": "games/Pokemon Elysium B.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Emerald",
+    "html": "games/Pokemon Emerald.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Emerald Crest",
+    "html": "games/Pokemon Emerald Crest.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Emerald Enhanced",
+    "html": "games/Pokemon Emerald Enhanced.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Emerald Imperium",
+    "html": "games/Pokemon Emerald Imperium.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Emerald Kaizo",
+    "html": "games/Pokemon Emerald Kaizo.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Emerald Mini",
+    "html": "games/Pokemon Emerald Mini.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Emerald Randomized",
+    "html": "games/Pokemon Emerald Randomized.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Emerald Rouge",
+    "html": "games/Pokemon Emerald Rouge.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Emerald Seaglass",
+    "html": "games/Pokemon Emerald Seaglass.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Energized Emerald",
+    "html": "games/Pokemon Energized Emerald.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Evolved",
+    "html": "games/Pokemon Evolved.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Firered",
+    "html": "games/Pokemon Firered.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Firered Randomized",
+    "html": "games/Pokemon Firered Randomized.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Firered Rocket Edition",
+    "html": "games/Pokemon Firered Rocket Edition.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Flora Sky",
+    "html": "games/Pokemon Flora Sky.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Gaia",
+    "html": "games/Pokemon Gaia.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Gold",
+    "html": "games/Pokemon Gold.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Heart & Soul",
+    "html": "games/Pokemon Heart & Soul.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Inclement Emerald",
+    "html": "games/Pokemon Inclement Emerald.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Leaf Green",
+    "html": "games/Pokemon Leaf Green.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Light Platinum",
+    "html": "games/Pokemon Light Platinum.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Liquid Crystal",
+    "html": "games/Pokemon Liquid Crystal.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Mega Moemon",
+    "html": "games/Pokemon Mega Moemon.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Mystery Dungeon",
+    "html": "games/Pokemon Mystery Dungeon.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Mystery Dungeon - Explorers of Sky",
+    "html": "games/Pokemon Mystery Dungeon - Explorers of Sky.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Odyssey",
+    "html": "games/Pokemon Odyssey.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Pisces",
+    "html": "games/Pokemon Pisces.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Quetzal",
+    "html": "games/Pokemon Quetzal.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Radical Red",
+    "html": "games/Pokemon Radical Red.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Red Version",
+    "html": "games/Pokemon Red Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon ROWE",
+    "html": "games/Pokemon ROWE.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Ruby",
+    "html": "games/Pokemon Ruby.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Run and Bun",
+    "html": "games/Pokemon Run and Bun.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Sapphire",
+    "html": "games/Pokemon Sapphire.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Scorched Silver",
+    "html": "games/Pokemon Scorched Silver.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Shiny Gold Sigma",
+    "html": "games/Pokemon Shiny Gold Sigma.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Silver",
+    "html": "games/Pokemon Silver.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Snap",
+    "html": "games/Pokemon Snap.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Pokemon Stadium",
+    "html": "games/Pokemon Stadium.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Stunning Steel",
+    "html": "games/Pokemon Stunning Steel.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Sword and Shield Ultimate Plus",
+    "html": "games/Pokemon Sword and Shield Ultimate Plus.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon the Last Fire Red",
+    "html": "games/Pokemon the Last Fire Red.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Too Many Types",
+    "html": "games/Pokemon Too Many Types.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Ultra Violet",
+    "html": "games/Pokemon Ultra Violet.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Unbound",
+    "html": "games/Pokemon Unbound.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Vega",
+    "html": "games/Pokemon Vega.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pokemon Volt White 2 Redux",
+    "html": "games/Pokemon Volt White 2 Redux.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon Voyager",
+    "html": "games/Pokemon Voyager.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon White Version",
+    "html": "games/Pokemon White Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Pokemon White Version 2",
+    "html": "games/Pokemon White Version 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Pokemon Yellow Version",
+    "html": "games/Pokemon Yellow Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9classic",
+    "html": "games/Pok\u00e9classic.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Emerald Horizons",
+    "html": "games/Pok\u00e9mon Emerald Horizons.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Exceeded Emerald",
+    "html": "games/Pok\u00e9mon Exceeded Emerald.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Fire Gold",
+    "html": "games/Pok\u00e9mon Fire Gold.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Pit of 100 trials (generation 9)",
+    "html": "games/Pok\u00e9mon Pit of 100 trials (generation 9).html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Polished Crystal",
+    "html": "games/Pok\u00e9mon Polished Crystal.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Recharged Pink",
+    "html": "games/Pok\u00e9mon Recharged Pink.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Team Rocket Edition",
+    "html": "games/Pok\u00e9mon Team Rocket Edition.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Tourmaline Version",
+    "html": "games/Pok\u00e9mon Tourmaline Version.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Pok\u00e9mon Unova Emerald",
+    "html": "games/Pok\u00e9mon Unova Emerald.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Puyo Puyo Fever",
+    "html": "games/Puyo Puyo Fever.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Q-bert",
+    "html": "games/Q-bert.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Quickie World",
+    "html": "games/Quickie World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Rad Racer",
+    "html": "games/Rad Racer.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Rayman",
+    "html": "games/Rayman.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Resident Evil 2",
+    "html": "games/Resident Evil 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Ridge Racer",
+    "html": "games/Ridge Racer.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Road Fighter",
+    "html": "games/Road Fighter.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "nes"
+  },
+  {
+    "name": "Rocket Knight Adventures",
+    "html": "games/Rocket Knight Adventures.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Scribblenauts",
+    "html": "games/Scribblenauts.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Secret of Mana",
+    "html": "games/Secret of Mana.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Shin Megami Tensei Devil Survivor",
+    "html": "games/Shin Megami Tensei Devil Survivor.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Shin Megami Tensei Strange Journey",
+    "html": "games/Shin Megami Tensei Strange Journey.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Side Pocket",
+    "html": "games/Side Pocket.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Silent Hill",
+    "html": "games/Silent Hill.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Skate It",
+    "html": "games/Skate It.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Smash Remix",
+    "html": "games/Smash Remix.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Sonic 1 Contemporary",
+    "html": "games/Sonic 1 Contemporary.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic 1 Score Rush",
+    "html": "games/Sonic 1 Score Rush.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic 2 Score Rush",
+    "html": "games/Sonic 2 Score Rush.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic 3 And Knuckles",
+    "html": "games/Sonic 3 And Knuckles.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic 3 Complete",
+    "html": "games/Sonic 3 Complete.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic 3D Blast - Directors Cut",
+    "html": "games/Sonic 3D Blast - Directors Cut.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic Advance",
+    "html": "games/Sonic Advance.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Sonic Advance 2",
+    "html": "games/Sonic Advance 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Sonic Advance 2 SP",
+    "html": "games/Sonic Advance 2 SP.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Sonic Advance 3",
+    "html": "games/Sonic Advance 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Sonic and Ashuro",
+    "html": "games/Sonic and Ashuro.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic and Knuckles",
+    "html": "games/Sonic and Knuckles.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic Battle",
+    "html": "games/Sonic Battle.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Sonic CD",
+    "html": "games/Sonic CD.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Sonic Classic Collection",
+    "html": "games/Sonic Classic Collection.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Sonic Classic Heroes",
+    "html": "games/Sonic Classic Heroes.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic Colors",
+    "html": "games/Sonic Colors.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Sonic Delta Origins",
+    "html": "games/Sonic Delta Origins.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic Hellfire Saga",
+    "html": "games/Sonic Hellfire Saga.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic Jam",
+    "html": "games/Sonic Jam.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaSaturn"
+  },
+  {
+    "name": "Sonic Megamix",
+    "html": "games/Sonic Megamix.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic R",
+    "html": "games/Sonic R.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaSaturn"
+  },
+  {
+    "name": "Sonic Rush",
+    "html": "games/Sonic Rush.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Sonic Rush Adventure",
+    "html": "games/Sonic Rush Adventure.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Sonic Spinball",
+    "html": "games/Sonic Spinball.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic the Hedgehog",
+    "html": "games/Sonic the Hedgehog.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic the Hedgehog 2",
+    "html": "games/Sonic the Hedgehog 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Sonic the Hedgehog 3",
+    "html": "games/Sonic the Hedgehog 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Space Invaders",
+    "html": "games/Space Invaders.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Star Fox",
+    "html": "games/Star Fox.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Star Fox 64",
+    "html": "games/Star Fox 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Star Raiders",
+    "html": "games/Star Raiders.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Steel Empire",
+    "html": "games/Steel Empire.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Street Fighter 2",
+    "html": "games/Street Fighter 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Street Fighter 2 Turbo",
+    "html": "games/Street Fighter 2 Turbo.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Street Fighter Alpha 3",
+    "html": "games/Street Fighter Alpha 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Streets Of Rage",
+    "html": "games/Streets Of Rage.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "Streets Of Rage 2",
+    "html": "games/Streets Of Rage 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "Streets Of Rage 3",
+    "html": "games/Streets Of Rage 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "Style Savvy",
+    "html": "games/Style Savvy.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Super Bomberman",
+    "html": "games/Super Bomberman.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Castlevania IV",
+    "html": "games/Super Castlevania IV.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Diagonal mario 2",
+    "html": "games/Super Diagonal mario 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mario 64",
+    "html": "games/Super Mario 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Super Mario 64 DS",
+    "html": "games/Super Mario 64 DS.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Super Mario Advance",
+    "html": "games/Super Mario Advance.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Mario Advance 2",
+    "html": "games/Super Mario Advance 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Mario Advance 3",
+    "html": "games/Super Mario Advance 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Mario Advance 4",
+    "html": "games/Super Mario Advance 4.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Mario All Stars",
+    "html": "games/Super Mario All Stars.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mario Bros. 2",
+    "html": "games/Super Mario Bros. 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Super Mario Bros. 3",
+    "html": "games/Super Mario Bros. 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Super Mario Kart",
+    "html": "games/Super Mario Kart.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mario Land",
+    "html": "games/Super Mario Land.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Mario Land 2",
+    "html": "games/Super Mario Land 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Mario Rpg",
+    "html": "games/Super Mario Rpg.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mario World",
+    "html": "games/Super Mario World.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mario World 2 Yoshis Island",
+    "html": "games/Super Mario World 2 Yoshis Island.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mario World the Secret of the 7 Golden Statues",
+    "html": "games/Super Mario World the Secret of the 7 Golden Statues.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Mariomon",
+    "html": "games/Super Mariomon.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Super Metroid",
+    "html": "games/Super Metroid.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Monkey Ball jr",
+    "html": "games/Super Monkey Ball jr.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Super Punch Out",
+    "html": "games/Super Punch Out.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Super Puzzle Fighter II Turbo",
+    "html": "games/Super Puzzle Fighter II Turbo.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Super Scribblenauts",
+    "html": "games/Super Scribblenauts.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Super Smash bros",
+    "html": "games/Super Smash bros.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Super Street Fighter II Turbo Revival",
+    "html": "games/Super Street Fighter II Turbo Revival.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@main/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "gba"
+  },
+  {
+    "name": "Super Tilt Bros",
+    "html": "games/Super Tilt Bros.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Taiko No Tatsujin",
+    "html": "games/Taiko No Tatsujin.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Tapper",
+    "html": "games/Tapper.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "coleco"
+  },
+  {
+    "name": "Tecmo Bowl",
+    "html": "games/Tecmo Bowl.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Teenage Mutant Ninja Turtles - Shredders Re-Revenge",
+    "html": "games/Teenage Mutant Ninja Turtles - Shredders Re-Revenge.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "segaMD"
+  },
+  {
+    "name": "Tempest 2000",
+    "html": "games/Tempest 2000.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Tetris",
+    "html": "games/Tetris.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Tetris Attack",
+    "html": "games/Tetris Attack.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "The legend of Zelda",
+    "html": "games/The legend of Zelda.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "The Legend of Zelda - Minish Cap",
+    "html": "games/The Legend of Zelda - Minish Cap.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "The Legend of Zelda a Link to the Past",
+    "html": "games/The Legend of Zelda a Link to the Past.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "The Legend of Zelda Majoras Mask",
+    "html": "games/The Legend of Zelda Majoras Mask.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "The Legend of Zelda Ocarina of Time",
+    "html": "games/The Legend of Zelda Ocarina of Time.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "The Pit",
+    "html": "games/The Pit.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Theme Park",
+    "html": "games/Theme Park.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Tom Clancys Rainbow Six",
+    "html": "games/Tom Clancys Rainbow Six.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Tony Hawks Pro Skater",
+    "html": "games/Tony Hawks Pro Skater.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Tony Hawks Pro Skater 2",
+    "html": "games/Tony Hawks Pro Skater 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Tony Hawks Pro Skater 4",
+    "html": "games/Tony Hawks Pro Skater 4.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Tony Hawks Underground",
+    "html": "games/Tony Hawks Underground.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Triple Play 2000",
+    "html": "games/Triple Play 2000.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Twisted Metal",
+    "html": "games/Twisted Metal.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Twisted Metal 2",
+    "html": "games/Twisted Metal 2.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Ultimate Mortal Kombat",
+    "html": "games/Ultimate Mortal Kombat.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/genizy/emu@master/"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": false,
+    "core": "unknown"
+  },
+  {
+    "name": "Ultimate Mortal Kombat 3",
+    "html": "games/Ultimate Mortal Kombat 3.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  },
+  {
+    "name": "Vanguard",
+    "html": "games/Vanguard.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Wario Land 4",
+    "html": "games/Wario Land 4.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Wario Ware inc",
+    "html": "games/Wario Ware inc.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "gba"
+  },
+  {
+    "name": "Warioware D.I.Y",
+    "html": "games/Warioware D.I.Y.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nds"
+  },
+  {
+    "name": "Wave Race 64",
+    "html": "games/Wave Race 64.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "n64"
+  },
+  {
+    "name": "Wipeout 2097",
+    "html": "games/Wipeout 2097.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "psx"
+  },
+  {
+    "name": "Wolfenstein 3D",
+    "html": "games/Wolfenstein 3D.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "jaguar"
+  },
+  {
+    "name": "Xevious",
+    "html": "games/Xevious.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Yars Revenge",
+    "html": "games/Yars Revenge.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "atari2600"
+  },
+  {
+    "name": "Yoshis Strange Quest",
+    "html": "games/Yoshis Strange Quest.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "snes"
+  },
+  {
+    "name": "Zelda 2 the Legend of Link",
+    "html": "games/Zelda 2 the Legend of Link.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "nes"
+  },
+  {
+    "name": "Zombies Ate My Neighbors",
+    "html": "games/Zombies Ate My Neighbors.html",
+    "emulator": [
+      "https://cdn.jsdelivr.net/gh/a456pur/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76/storage/emulatorjs/data"
+    ],
+    "hiddenCss": false,
+    "storageGuard": false,
+    "parentGoogle": true,
+    "core": "segaMD"
+  }
+]

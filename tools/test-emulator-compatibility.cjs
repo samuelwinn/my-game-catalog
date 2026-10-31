@@ -1,0 +1,54 @@
+const {test} = require('node:test');
+const assert = require('node:assert/strict');
+const vm = require('node:vm');
+const fs = require('node:fs');
+const path = require('node:path');
+const shim = fs.readFileSync(path.join(__dirname,'emulator-compatibility.js'),'utf8');
+const prepare = fs.readFileSync(path.join(__dirname,'prepare-emulator-document.js'),'utf8');
+function denied(){const error=new Error('Denied by embed');error.name='SecurityError';throw error}
+test('restricted storage and controllers do not crash emulator startup',()=>{
+ const window={};
+ for(const name of ['localStorage','sessionStorage'])Object.defineProperty(window,name,{get:denied,configurable:true});
+ window.indexedDB={open:denied};
+ const context={window,navigator:{getGamepads:denied}};
+ vm.createContext(context);vm.runInContext(shim,context);
+ window.localStorage.setItem('save','data');
+ assert.equal(window.localStorage.getItem('save'),'data');
+ window.localStorage.slot='state';
+ assert.equal(window.localStorage.getItem('slot'),'state');
+ assert.deepEqual(Object.keys(window.localStorage),['save','slot']);
+ assert.equal(window.sessionStorage.getItem('save'),null);
+ window.localStorage.removeItem('save');
+ assert.equal(window.localStorage.getItem('save'),null);
+ assert.equal(window.localStorage.length,1);
+ window.localStorage.clear();assert.equal(window.localStorage.length,0);
+ assert.equal(window.indexedDB,undefined);
+ assert.equal(window.EJS_disableDatabases,true);
+ assert.equal(context.navigator.getGamepads().length,0);
+});
+test('available browser APIs are preserved and unexpected controller failures propagate',()=>{
+ const localStorage={setItem(){},removeItem(){}};
+ const indexedDB={open(){return {}}};
+ const window={localStorage,sessionStorage:localStorage,indexedDB};
+ const pads=[{id:'controller'}];
+ const context={window,navigator:{getGamepads:()=>pads}};
+ vm.createContext(context);vm.runInContext(shim,context);
+ assert.equal(window.localStorage,localStorage);assert.equal(window.indexedDB,indexedDB);
+ assert.equal(context.navigator.getGamepads(),pads);
+ context.navigator.getGamepads=()=>{throw new TypeError('driver error')};
+ vm.runInContext(shim,context);
+ assert.throws(()=>context.navigator.getGamepads(),/driver error/);
+});
+test('document preparation is limited to emulator games and retains ROM and BIOS configuration',()=>{
+ const context={};vm.createContext(context);
+ vm.runInContext(shim.replace(/installEmulatorCompatibility\(\);\s*$/,'')+'\n'+prepare,context);
+ const regular='<html><head></head><body>Ordinary game</body></html>';
+ assert.equal(context.prepareEmulatorDocument(regular),regular);
+ const html='<head><script>window.parent.maeExportApis_();</script></head><script>EJS_player="#game";EJS_gameUrl="original.nes";EJS_biosUrl="original.bin";EJS_pathtodata="https://cdn.jsdelivr.net/gh/genizy/emu@master/";</script>';
+ const fixed=context.prepareEmulatorDocument(html);
+ assert.ok(fixed.indexOf('installEmulatorCompatibility')<fixed.indexOf('EJS_player='));
+ assert.ok(!fixed.includes('maeExportApis_'));
+ assert.ok(!fixed.includes('genizy/emu@master'));
+ assert.ok(fixed.includes('original.nes'));assert.ok(fixed.includes('original.bin'));
+ for(const script of fixed.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi))new Function(script[1]);
+});

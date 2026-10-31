@@ -1,0 +1,593 @@
+{
+  "date": "2026-10-31",
+  "staticScan": {
+    "publishedCatalogEntries": 875,
+    "emulatorGames": 451,
+    "otherGames": 424,
+    "runtimeSourcePrefixesRepaired": 425,
+    "additionalFamidashHiddenCssMatches": 0
+  },
+  "baseline": {
+    "mode": "baseline",
+    "runAt": "2026-10-31T14:21:18.969Z",
+    "results": [
+      {
+        "name": "7 Grand Dad",
+        "mode": "baseline",
+        "clicked": null,
+        "state": {
+          "text": "",
+          "emulator": "undefined",
+          "core": "nes",
+          "canvas": null,
+          "gameDisplay": "block",
+          "storage": "SecurityError"
+        },
+        "errors": [
+          "Uncaught (in promise) SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag."
+        ],
+        "network": [],
+        "bytes": 121846
+      },
+      {
+        "name": "Advance Wars",
+        "mode": "baseline",
+        "clicked": "PLAY",
+        "state": {
+          "text": "",
+          "emulator": "undefined",
+          "core": "gba",
+          "canvas": null,
+          "gameDisplay": "block",
+          "storage": "SecurityError"
+        },
+        "errors": [
+          "SecurityError: Failed to read a named property 'maeExportApis_' from 'Window': Blocked a frame with origin \"null\" from accessing a cross-origin frame.",
+          "Uncaught (in promise) SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag."
+        ],
+        "network": [],
+        "bytes": 122415
+      },
+      {
+        "name": "Banjo-Kazooie",
+        "mode": "baseline",
+        "clicked": "PLAY",
+        "state": {
+          "text": "",
+          "emulator": "undefined",
+          "core": "n64",
+          "canvas": null,
+          "gameDisplay": "block",
+          "storage": "SecurityError"
+        },
+        "errors": [
+          "SecurityError: Failed to read a named property 'maeExportApis_' from 'Window': Blocked a frame with origin \"null\" from accessing a cross-origin frame.",
+          "Uncaught SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.",
+          "SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.\n    at new EmulatorJS (https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/src/emulator.js:247:35)\n    at https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/loader.js:241:27"
+        ],
+        "network": [
+          "404 https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/data/emulator.min.js"
+        ],
+        "bytes": 229898
+      },
+      {
+        "name": "Bomberman",
+        "mode": "baseline",
+        "clicked": "PLAY",
+        "state": {
+          "text": "",
+          "emulator": "undefined",
+          "core": "nes",
+          "canvas": null,
+          "gameDisplay": "block",
+          "storage": "SecurityError"
+        },
+        "errors": [
+          "SecurityError: Failed to read a named property 'maeExportApis_' from 'Window': Blocked a frame with origin \"null\" from accessing a cross-origin frame.",
+          "Uncaught SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag.",
+          "Uncaught (in promise) SecurityError: Failed to read the 'localStorage' property from 'Window': The document is sandboxed and lacks the 'allow-same-origin' flag."
+        ],
+        "network": [],
+        "bytes": 124495
+      },
+      {
+        "name": "Ducktales",
+        "mode": "baseline",
+        "clicked": null,
+        "state": {
+          "text": "",
+          "emulator": "undefined",
+          "core": "nes",
+          "canvas": null,
+          "gameDisplay": "block",
+          "storage": "SecurityError"
+        },
+        "errors": [],
+        "network": [
+          "net::ERR_BLOCKED_BY_ORB"
+        ],
+        "bytes": 2632
+      },
+      {
+        "name": "Famidash",
+        "mode": "baseline",
+        "clicked": "PLAY FAMIDASH",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "nes",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "bytes": 10676
+      }
+    ]
+  },
+  "afterRepair": {
+    "mode": "fixed-open",
+    "runAt": "2026-10-31T14:33:55.821Z",
+    "results": [
+      {
+        "name": "Bomberman",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "nes",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 214953
+      },
+      {
+        "name": "Another World",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "segaMD",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 1680250
+      },
+      {
+        "name": "Battlezone",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "atari2600",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 991150
+      },
+      {
+        "name": "Banjo-Kazooie",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "n64",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [
+          "enlarged memory arrays from 16777216 to 33554432, took 6 ms (has ArrayBuffer.transfer? false)",
+          "Warning: Enlarging memory arrays, this is not fast! 16777216,33554432",
+          "enlarged memory arrays from 33554432 to 67108864, took 10 ms (has ArrayBuffer.transfer? false)",
+          "Warning: Enlarging memory arrays, this is not fast! 33554432,67108864"
+        ],
+        "bytes": 17755720
+      },
+      {
+        "name": "Castlevania - Circle of the Moon",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "gba",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 3322019
+      },
+      {
+        "name": "Chips Challenge",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "lynx",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 891134
+      },
+      {
+        "name": "Chrono Trigger",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "snes",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 3881296
+      },
+      {
+        "name": "Ducktales",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "nes",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 1056472
+      },
+      {
+        "name": "Famidash",
+        "mode": "fixed-open",
+        "clicked": "PLAY FAMIDASH",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "nes",
+          "canvas": {
+            "width": 595,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 622.75
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 14602
+      },
+      {
+        "name": "Metal Slug - 1st Mission",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "ngp",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 1441215
+      },
+      {
+        "name": "Pokemon Crystal Clear",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "gb",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 2143753
+      },
+      {
+        "name": "Pokemon Battle Factory",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "gb",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 1316225
+      },
+      {
+        "name": "Tapper",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "coleco",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 853070
+      },
+      {
+        "name": "7 Grand Dad",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "nes",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 8863
+      },
+      {
+        "name": "Advance Wars",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "gba",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 10376
+      },
+      {
+        "name": "Grimaces Birthday",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "gb",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 1061295
+      },
+      {
+        "name": "GS Chronicles",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "gba",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [
+          "enlarged memory arrays from 16777216 to 33554432, took 5 ms (has ArrayBuffer.transfer? false)",
+          "Warning: Enlarging memory arrays, this is not fast! 16777216,33554432",
+          "enlarged memory arrays from 33554432 to 67108864, took 11 ms (has ArrayBuffer.transfer? false)",
+          "Warning: Enlarging memory arrays, this is not fast! 33554432,67108864"
+        ],
+        "bytes": 17083279
+      },
+      {
+        "name": "Castlevania - Bloodlines",
+        "mode": "fixed-open",
+        "clicked": null,
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "segaMD",
+          "canvas": {
+            "width": 764,
+            "height": 485,
+            "visibleWidth": 764,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 716920
+      },
+      {
+        "name": "Alien vs. Predator",
+        "mode": "fixed-open",
+        "clicked": "PLAY",
+        "state": {
+          "text": "Restart\nPause\nSave State\nLoad State\nControl Settings\nCheats\nCache Manager\nExport Save File\nImport Save File\nMute\nContext Menu\nSettings\nEnter Fullscreen\nExit EmulatorJS",
+          "emulator": "object",
+          "started": true,
+          "core": "jaguar",
+          "canvas": {
+            "width": 756,
+            "height": 485,
+            "visibleWidth": 756,
+            "visibleHeight": 485
+          },
+          "gameDisplay": "block",
+          "storage": "object"
+        },
+        "errors": [],
+        "network": [],
+        "consoleMessages": [],
+        "bytes": 3979322
+      }
+    ]
+  },
+  "limits": [
+    "Startup checks, not full playthroughs.",
+    "Not every game in the catalog was browser-tested.",
+    "The background browser can pause console animation; rendered screens were inspected separately."
+  ]
+}

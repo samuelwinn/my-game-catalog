@@ -61,14 +61,76 @@ function filePath(game){if(!game.html||!/^games\/[\w\W]+$/.test(game.html)||game
 // Pin repaired games so CDN caches cannot serve the previous loader.
 const GAME_REVISIONS={'games/Famidash.html':'79890e771a44e55b12374132259e5013e43ac992'};
 function fileUrl(game){const revision=GAME_REVISIONS[game.html];return (revision?CDN.replace('@'+BRANCH+'/', '@'+revision+'/'):CDN)+filePath(game)}
-function configureGameFrame(frame,game){
- // Famidash's working EmulatorJS build needs browser APIs blocked by an opaque sandbox origin.
- // Match its working gn-math iframe; preserve the existing sandbox for other games.
- if(game.html==='games/Famidash.html')frame.removeAttribute('sandbox');
+function configureGameFrame(frame,game,html=''){
+
+ // Match the working gn-math iframe for EmulatorJS; sandbox other game types.
+ if(game.html==='games/Famidash.html'||/\bEJS_player\s*=/.test(html))frame.removeAttribute('sandbox');
  else frame.setAttribute('sandbox','allow-scripts allow-forms allow-modals allow-pointer-lock allow-downloads');
 }
 function safeBaseFor(game){return new URL('.',fileUrl(game)).href}
 function insertBase(html,base){if(/<base(?:\s|>)/i.test(html))return html;const tag=`<base href="${base.replaceAll('&','&amp;').replaceAll('"','&quot;')}">`;return /<head\b[^>]*>/i.test(html)?html.replace(/<head\b[^>]*>/i,s=>s+tag):tag+html}
+// Inject before EmulatorJS scripts in srcdoc games. Keep the game iframe sandboxed.
+function installEmulatorCompatibility() {
+ 'use strict';
+ function memoryStorage() {
+  const values = new Map();
+  const storage = {
+   getItem(key) {key=String(key);return values.has(key)?values.get(key):null},
+   setItem(key,value) {values.set(String(key),String(value))},
+   removeItem(key) {values.delete(String(key))},
+   clear() {values.clear()},
+   key(index) {return Array.from(values.keys())[index]??null},
+   get length() {return values.size}
+  };
+  return new Proxy(storage, {
+   get(target,key) {return key in target?Reflect.get(target,key):values.get(String(key))},
+   set(target,key,value) {values.set(String(key),String(value));return true},
+   deleteProperty(target,key) {values.delete(String(key));return true},
+   ownKeys() {return [...values.keys()]},
+   getOwnPropertyDescriptor(target,key) {if(values.has(String(key)))return {enumerable:true,configurable:true,value:values.get(String(key)),writable:true}}
+  });
+ }
+ for(const name of ['localStorage','sessionStorage']) {
+  try {
+   const storage=window[name],key='__liqua_emulator_probe__';
+   storage.setItem(key,'1');storage.removeItem(key);
+  } catch(error) {
+   try {Object.defineProperty(window,name,{configurable:true,value:memoryStorage()})} catch(ignored) {}
+  }
+ }
+ // EmulatorJS already supports unavailable IndexedDB. An opaque sandbox origin
+ // throws on access, so expose the same unavailable state instead of crashing.
+ try {
+  if(window.indexedDB) {
+   const probe=window.indexedDB.open('__liqua_emulator_probe__');
+   probe.onsuccess=function(){probe.result.close()};
+  }
+ } catch(error) {
+  try {Object.defineProperty(window,'indexedDB',{configurable:true,value:undefined})} catch(ignored) {}
+  window.EJS_disableDatabases=true;
+ }
+ if(typeof navigator.getGamepads==='function') {
+  const getGamepads=navigator.getGamepads.bind(navigator);
+  try {Object.defineProperty(navigator,'getGamepads',{configurable:true,value:function(){
+   try {return getGamepads()} catch(error) {if(error.name==='SecurityError')return [];throw error}
+  }})} catch(ignored) {}
+ }
+}
+// Keep this function and installEmulatorCompatibility in sync with the embed files.
+function prepareEmulatorDocument(html) {
+ if(!/\bEJS_player\s*=/.test(html))return html;
+ // Old source trees no longer deliver a complete, consistent emulator runtime.
+ // Change only the runtime URLs; retain each game's ROM, BIOS and core settings.
+ html=html.replace(/https:\/\/cdn\.jsdelivr\.net\/gh\/(?:genizy\/emu@master\/|EmulatorJS\/EmulatorJS@main\/data\/?|a456pur\/seraph@81f551ca0aa8e3d6018d32d8ac5904ac9bc78f76\/storage\/emulatorjs\/data\/?)/g,'https://cdn.jsdelivr.net/gh/bubbls/brogoofyahhmangogotonablacklistskullwiltingrose@7bf5cbb0b94866568d2aaa1fd42ebb5acd517e0d/');
+ // Also repair cached copies of this game's file: jsDelivr rejects its ROM URL.
+ html=html.replace('https://cdn.jsdelivr.net/gh/Stinkalistic/junk@main/grimacebday%20v.1.7.gb','https://raw.githubusercontent.com/Stinkalistic/junk/main/grimacebday%20v.1.7.gb');
+ // Old Google Sites exports call a parent API that does not exist in srcdoc.
+ html=html.replace(/<script\b[^>]*>\s*window\.parent\.maeExportApis_\(\);?\s*<\/script\s*>/gi,'');
+ html=html.replace(/\bwindow\.parent\.maeExportApis_\(\);?/g,'');
+ const boot='<script>('+installEmulatorCompatibility.toString()+')();<\/script>';
+ return /<head\b[^>]*>/i.test(html)?html.replace(/<head\b[^>]*>/i,head=>head+boot):boot+html;
+}
+
 async function decompressGzip(buffer){if(!('DecompressionStream' in window))throw new Error('This browser cannot decompress the larger games. Use a current version of Chrome, Edge, Firefox, or Safari.');const stream=new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'));return await new Response(stream).text()}
 function setLoading(on,msg='Loading game…',error=''){els.loading.hidden=!on;els.spinner.hidden=!!error;els.loadingText.textContent=msg;els.viewerError.hidden=!error;els.viewerError.textContent=error;els.loadingNote.hidden=!!error}
 
@@ -88,7 +150,7 @@ async function loadGameDocument(game){
  }
  if(!response)throw new Error('Could not fetch '+game.name+' from GitHub or jsDelivr: '+String(lastError?.message||lastError));
  const html=game.compressed?await decompressGzip(await response.arrayBuffer()):await response.text();
- return insertBase(html,safeBaseFor(game));
+ return insertBase(prepareEmulatorDocument(html),safeBaseFor(game));
 }
 async function openGame(game){
  const id=++requestId;current=game;
@@ -98,7 +160,7 @@ async function openGame(game){
  try{
   const html=await loadGameDocument(game);
   if(id!==requestId)return;
-  configureGameFrame(els.frame,game);
+  configureGameFrame(els.frame,game,html);
   els.frame.srcdoc=html;setLoading(false);
  }catch(e){
   if(id!==requestId)return;
@@ -130,6 +192,7 @@ function openInBlank(){
   doc.body.appendChild(frame);
   loadGameDocument(game).then(html=>{
    if(popup.closed)return;
+   configureGameFrame(frame,game,html);
    frame.srcdoc=html;
   }).catch(e=>{
    if(popup.closed)return;
