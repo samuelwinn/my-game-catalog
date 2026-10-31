@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Famidash — Liqua</title>
 <!-- Famidash: a Geometry Dash demake for NES. https://github.com/tfdsoft/famidash
-     NES ROM location preserved from Liqua's existing game file.
+     Emulator and Famidash v1.2.8 ROM match the working gn-math embed.
      EmulatorJS runtime: https://emulatorjs.org/docs/embed/ -->
 <style>
   *{box-sizing:border-box}
@@ -76,13 +76,13 @@
   window.EJS_color='#000000';
   window.EJS_startOnLoaded=true;
   window.EJS_gameName='Famidash';
-  window.EJS_pathtodata='https://cdn.emulatorjs.org/stable/data/';
-  window.EJS_gameUrl='https://cdn.jsdelivr.net/gh/bubbls/UGS-file-encryption@c37a3523fe083349a08df217681649513293a74b/famidash.nes';
+  window.EJS_pathtodata='https://cdn.jsdelivr.net/gh/bubblfan/emu@master/';
+  window.EJS_gameUrl='https://cdn.jsdelivr.net/gh/ap-math-class/exams@main/nes/Famidash.v1.2.8.nes';
   window.EJS_ready=function(){showStatus('');intro.style.display='none';};
   window.EJS_onGameStart=function(){showStatus('');intro.style.display='none';};
   game.style.display='block';
   const script=document.createElement('script');
-  script.src='https://cdn.emulatorjs.org/stable/data/loader.js';
+  script.src='https://cdn.jsdelivr.net/gh/bubblfan/emu@master/loader.js';
   script.async=true;
   script.onerror=function(){showFailure('The emulator could not load. Check your internet connection or try again later.');};
   document.body.appendChild(script);
