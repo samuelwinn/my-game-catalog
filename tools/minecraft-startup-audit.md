@@ -1,37 +1,34 @@
-# Minecraft 1.8.8 (EaglecraftX) startup repair
+# Minecraft 1.8.8 user-supplied client replacement
 
-Tested October 31, 2026 against `games/Minecraft 1.8.8 (EaglecraftX).html.gz`.
+Updated October 31, 2026.
 
-The original restricted iframe crashes after the launch countdown:
+The catalog now points to `games/Minecraft 1.8.8 (EaglecraftX).html`.
+This file contains the replacement HTML supplied by the user, including its
+pinned classes.min.js, fix-webm-duration.js, assets.epk, server list and focus
+handlers. It is plain HTML, so this catalog entry no longer sets compressed:true.
+The old compressed asset is no longer selected by the catalog.
 
-```text
-EaglercraftX's runtime could not be initialized!
-SecurityError: Failed to read the 'localStorage' property from 'Window':
-The document is sandboxed and lacks the 'allow-same-origin' flag.
-```
+All three viewer/Google Sites sources permit this client to use a browser origin
+for storage and workers, as they did for the previous compressed client.
 
-This client uses Eaglercraft's engine, so the earlier EmulatorJS detection does
-not cover it. Its iframe now receives the browser origin it needs for storage
-and workers in both the main viewer and the Open in about:blank viewer.
-Other non-emulator games retain their sandbox.
+Browser testing of the supplied client inside an iframe reproduced a separate
+startup failure when an embed denies gamepad access. The shared document loader
+therefore injects the existing denied-API compatibility guard before this game's
+scripts. The supplied game file itself remains unchanged. Available storage and
+controllers are preserved; a denied getGamepads call returns an empty controller
+list so keyboard play can initialize.
 
-Verified the fix using Liqua's actual `GOOGLE-SITES-EMBED.html`, fetching and
-decompressing the published 11.6 MB gzip file. The viewer reports no load error,
-and the game renders its profile screen in a 764 × 423 canvas. The profile's
-Done button responds and opens the next screen. Also added a test that checks
-the Minecraft exception and restoration of the sandbox when switching games.
+Verified in Chrome with gamepad permission deliberately denied:
 
-This is a startup/UI check. Multiplayer server availability and full gameplay
-are not covered by this test.
+- Client reaches its content-options screen, profile screen and Minecraft title.
+- Native W and Space events reach the game window with isTrusted:true.
+- Typing Q edits the username field.
+- The game document retains keyboard focus after clicking its canvas.
+- All three embed sources match and parse.
+- Catalog path, plain-HTML loading and compatibility regression checks pass.
 
-To reproduce the original failure and isolated repair using the browser audit:
+This checks startup and keyboard input, not full gameplay or multiplayer server
+availability. The relative lang/ configuration is retained from the supplied code.
 
-```text
-node tools/audit-game-startup.cjs baseline "Minecraft 1.8.8 (EaglecraftX)"
-node tools/audit-game-startup.cjs fixed-open "Minecraft 1.8.8 (EaglecraftX)"
-node --test tools/test-emulator-compatibility.cjs
-```
-
-The catalog-aware audit accepts non-EmulatorJS games as well as console games.
-Replace previously pasted Google Sites embed code with the updated `.txt`
-contents, then republish. No change to the compressed game asset is required.
+Replace the previously pasted Google Sites embed with the latest
+GOOGLE-SITES-EMBED.txt contents and republish.

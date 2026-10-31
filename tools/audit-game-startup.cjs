@@ -21,7 +21,7 @@ function gameSource(game) {
  const p = path.join(root, game.html);
  let source = (p.endsWith('.gz') ? zlib.gunzipSync(fs.readFileSync(p)) : fs.readFileSync(p)).toString('utf8');
  if(mode.startsWith('fixed')) {
-  source = helpers.prepareEmulatorDocument(source);
+  source = helpers.prepareEmulatorDocument(source,game);
  }
  return source;
 }

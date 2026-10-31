@@ -51,6 +51,10 @@ test('document preparation is limited to emulator games and retains ROM and BIOS
  assert.ok(!fixed.includes('genizy/emu@master'));
  assert.ok(fixed.includes('original.nes'));assert.ok(fixed.includes('original.bin'));
  for(const script of fixed.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi))new Function(script[1]);
+ const minecraft='<head><script src="supplied-client.js"></script></head>';
+ const prepared=context.prepareEmulatorDocument(minecraft,{html:'games/Minecraft 1.8.8 (EaglecraftX).html'});
+ assert.ok(prepared.indexOf('installEmulatorCompatibility')<prepared.indexOf('supplied-client.js'));
+ assert.ok(prepared.includes('supplied-client.js'));
 });
 test('Minecraft 1.8.8 gets its browser origin and switching games restores the sandbox',()=>{
  const html=fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8');
@@ -59,6 +63,9 @@ test('Minecraft 1.8.8 gets its browser origin and switching games restores the s
  const attributes=new Map([['sandbox','restricted']]);
  const frame={removeAttribute(name){attributes.delete(name)},setAttribute(name,value){attributes.set(name,value)}};
  context.configureGameFrame(frame,{html:'games/Minecraft 1.8.8 (EaglecraftX).html.gz'});
+ assert.equal(attributes.has('sandbox'),false);
+ context.configureGameFrame(frame,{html:'games/2048.html'});
+ context.configureGameFrame(frame,{html:'games/Minecraft 1.8.8 (EaglecraftX).html'});
  assert.equal(attributes.has('sandbox'),false);
  context.configureGameFrame(frame,{html:'games/2048.html'});
  assert.match(attributes.get('sandbox'),/allow-scripts/);

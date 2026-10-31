@@ -1880,8 +1880,7 @@
   },
   {
     "name": "Minecraft 1.8.8 (EaglecraftX)",
-    "html": "games/Minecraft 1.8.8 (EaglecraftX).html.gz",
-    "compressed": true
+    "html": "games/Minecraft 1.8.8 (EaglecraftX).html"
   },
   {
     "name": "Minecraft 1.8.8 Shadow Client",
